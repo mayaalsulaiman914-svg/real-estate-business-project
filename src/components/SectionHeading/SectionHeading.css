@@ -1,0 +1,23 @@
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 758px;
+    font-family: Urbanist;
+    h1 {
+        margin: 0;
+        font-size: 60px;
+        line-height: 120%;
+        font-weight: 600;
+        font-style: SemiBold;
+        color: #FFFFFF;
+    }
+    p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 500;
+        font-style: Medium;
+        color: #999999;
+    }
+}
