@@ -2,22 +2,26 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 758px;
-    font-family: Urbanist;
     h1 {
         margin: 0;
-        font-size: 60px;
-        line-height: 120%;
         font-weight: 600;
         font-style: SemiBold;
-        color: #FFFFFF;
+        color: var(--text-primary-color);
+        letter-spacing: 0%;
     }
     p {
         margin: 0;
-        font-size: 18px;
+        font-size: var(--font-size-md);
         line-height: 150%;
         font-weight: 500;
+        letter-spacing: 0%;
         font-style: Medium;
-        color: #999999;
+        color:var(--text-secondary-color);
     }
+}
+
+ 
+
+@media screen And (max-width : 992px) {
+  
 }
