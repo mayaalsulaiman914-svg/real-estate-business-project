@@ -5,6 +5,7 @@ import About from './pages/About'
 import PropertyDetails from './pages/PropertyDetails'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Button from './components/Button/Button'
  
 function App() {
  
