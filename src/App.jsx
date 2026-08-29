@@ -9,12 +9,12 @@ import Section from './components/Section/Section'
 import SectionHeading from './components/SectionHeading/SectionHeading'
 import Container from './components/Container/Container'
 import Button from './components/Button/Button'
+import Navbar from './components/Navbar/Navbar'
  
 function App() {
- 
-
   return (
-    <>
+      <>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
@@ -33,7 +33,8 @@ function App() {
        </Container>
     </Section>
     </>
-  )
+
+  );
 }
 
 export default App

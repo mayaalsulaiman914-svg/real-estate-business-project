@@ -1,0 +1,136 @@
+.navbar {
+  width: 100%;
+  color: var(--text-primary-color);
+}
+
+/* Top Navigation */
+
+.top-nav {
+  width: 100%;
+  background-color: var(--second-background);
+  background-image: url("/assets/img/background top nav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top-nav .container {
+  min-height: 50px;
+}
+
+.top-nav-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.top-nav-content p {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary-color);
+font-weight: 500;
+line-height: 150%;
+
+}
+
+.top-nav-content a {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary-color);
+  text-decoration: underline;
+}
+
+
+/* Main Navigation */
+
+.main-nav {
+  width: 100%;
+  border-bottom: 1px solid var(--second-background);
+  background-color: var(--second-background);
+}
+
+.main-nav .container {
+  min-height: 77px;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: -43px;
+}
+
+
+.navbar-logo img {
+  width: 113.33px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-logo span {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary-color);
+  margin-left: -37px;
+}
+
+.nav-links {
+  width: 322px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.main-nav .button {
+  width: 109px;
+  height: 49px;
+  background-color:var(--primary-background);
+;
+  
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 992px) {
+
+  .top-nav .container {
+    min-height: 45px;
+  }
+
+  .top-nav-content p {
+    font-size: var(--font-size-xs);
+    
+  }
+
+  .top-nav-content a {
+    font-size: var(--font-size-xs);
+  }
+
+  .main-nav .container {
+    min-height: 80px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .main-nav .button {
+    width: 100px;
+    height: 45px;
+  }
+
+  .navbar-logo img {
+    width: 113.33px;
+    height: 34px;
+  }
+}
