@@ -4,8 +4,10 @@
     gap: 24px;
     h1 {
         margin: 0;
+        font-size: 46px;
         font-weight: 600;
         font-style: SemiBold;
+        line-height: 120%;
         color: var(--text-primary-color);
         letter-spacing: 0%;
     }
