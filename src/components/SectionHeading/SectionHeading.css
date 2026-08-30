@@ -22,8 +22,16 @@
     }
 }
 
- 
-
 @media screen And (max-width : 992px) {
-  
+    .section-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h1 {
+            font-size: var(--font-size-2xl);
+        }
+        p {
+            font-size: var(--font-size-sm);
+        }
+    }
 }
