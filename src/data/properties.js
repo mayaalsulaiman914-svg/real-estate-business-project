@@ -125,6 +125,90 @@ const properties = [
         }
 
     },
+    {
+        id : 4,
+        type: "Villa",
+        title : "Rustic Retreat Cottage" ,
+        city : "Malibu, California" ,
+        price : "$550,000" ,
+        bedrooms : "3" ,
+        bathrooms : "3" ,
+        area : "2500" ,
+        image : "/assets/img/home3 page1.png",
+        description : "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... " ,
+         
+        // Additional Fees
+        additionalFees : {
+            Propertytransfertax : "25,000" ,
+            Legalfees : "3,000" ,
+            Homeinspection : "500" ,
+            Propertyinsurance : "1,200" ,
+        },
+
+        //Monthly Coast
+        MonthlyCosts : {
+            Propertytaxes : "1,250" ,
+            Homeownersassociationfee : "300" ,
+        },
+
+        //Total Initial Costs
+        Totalinitialcosts : {
+            Listingprice : "1,250,000" ,
+            Additionalfees : "29,700" ,
+            Downpayment : "250,000" ,
+            Mortgageamount : "1,000,000",
+        },
+
+        //Monthly Expenses
+        Monthlyexpenses : {
+            Propertytaxes : "1,250" ,
+            HomeownersAssociationFee : "300" ,
+            Propertyinsurance : "100" ,
+        }
+
+    },
+    {
+        id : 5,
+        type: "Villa",
+        title : "Rustic Retreat Cottage" ,
+        city : "Malibu, California" ,
+        price : "$550,000" ,
+        bedrooms : "3" ,
+        bathrooms : "3" ,
+        area : "2500" ,
+        image : "/assets/img/home3 page1.png",
+        description : "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... " ,
+         
+        // Additional Fees
+        additionalFees : {
+            Propertytransfertax : "25,000" ,
+            Legalfees : "3,000" ,
+            Homeinspection : "500" ,
+            Propertyinsurance : "1,200" ,
+        },
+
+        //Monthly Coast
+        MonthlyCosts : {
+            Propertytaxes : "1,250" ,
+            Homeownersassociationfee : "300" ,
+        },
+
+        //Total Initial Costs
+        Totalinitialcosts : {
+            Listingprice : "1,250,000" ,
+            Additionalfees : "29,700" ,
+            Downpayment : "250,000" ,
+            Mortgageamount : "1,000,000",
+        },
+
+        //Monthly Expenses
+        Monthlyexpenses : {
+            Propertytaxes : "1,250" ,
+            HomeownersAssociationFee : "300" ,
+            Propertyinsurance : "100" ,
+        }
+
+    },
 ]
 
 export default properties;

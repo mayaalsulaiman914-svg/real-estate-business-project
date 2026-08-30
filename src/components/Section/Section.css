@@ -66,7 +66,9 @@
 
 .properties-section {
   .container {
+ 
     flex-direction: column;
+     
   }
 }
 
