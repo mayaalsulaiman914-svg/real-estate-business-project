@@ -5,17 +5,28 @@
     font-weight: 500;
     color: var(--text-primary-color);
 }
-.button .primary {
-    width: 192px;
-    height: 63px;
+.button.primary {
+    width: 151px;
+    height: 49px;
     background-color: var(--background-btn);
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
 }
-.button .secondary {
-    width: 139px;
-    height: 63px;
+.button.secondary {
+    width: 111px;
+    height: 49px;
     background-color: var(--primary-background);
     border: 1px solid var(--primary-border);
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+@media screen And (max-width : 992px) {
+    .button.primary {
+        width: 358px;
+        height: 49px;
+    }
+    .button.secondary {
+        width: 358px;
+        height: 49px;
+    }
 }
