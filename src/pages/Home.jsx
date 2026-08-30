@@ -16,7 +16,7 @@ const Home = () => {
                 <Stars />
                 <SectionHeading title ={"Featured Properties"} description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.`} />
            </div>
-      {/*       <PropertySlider>
+            <PropertySlider>
               <div className='cards'>
                  {properties.map((property) => (
                 <PropertyCard key={property.id} property={property}  />
@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="left"><img src='/assets/img/left.png' /></div>
                 <div className="righ"><img src='/assets/img/right.png' /></div>
               </div>
-            </PropertySlider> */}
+            </PropertySlider>
 
 
         </Container>

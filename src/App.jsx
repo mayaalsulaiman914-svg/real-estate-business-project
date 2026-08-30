@@ -10,7 +10,7 @@ import SectionHeading from './components/SectionHeading/SectionHeading'
 import Container from './components/Container/Container'
 import Button from './components/Button/Button'
 import properties from './data/properties'
-import Footer from './components/Footer/Footer'
+ 
  
 function App() {
  
@@ -34,7 +34,7 @@ function App() {
               <Button>Explore Properties</Button>
        </Container>
     </Section>
-    <Footer/>
+   
     </>
   )
 }
