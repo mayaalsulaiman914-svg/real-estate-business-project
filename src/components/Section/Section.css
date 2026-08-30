@@ -64,6 +64,13 @@
 
  }
 
+.properties-section {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
  @media screen And (max-width : 992px) {
   .cta {
      .bg-left , .bg-right {

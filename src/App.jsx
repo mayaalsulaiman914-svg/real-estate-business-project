@@ -9,6 +9,8 @@ import Section from './components/Section/Section'
 import SectionHeading from './components/SectionHeading/SectionHeading'
 import Container from './components/Container/Container'
 import Button from './components/Button/Button'
+import properties from './data/properties'
+import Footer from './components/Footer/Footer'
  
 function App() {
  
@@ -18,7 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
-      <Route path='/propertydetails' element={<PropertyDetails/>} />
+      <Route path='/propertydetails/:id' element={<PropertyDetails />} />
       <Route path='/services' element={<Services/>} />
       <Route path='/contact' element={<Contact/>} />
     </Routes>
@@ -32,6 +34,7 @@ function App() {
               <Button>Explore Properties</Button>
        </Container>
     </Section>
+    <Footer/>
     </>
   )
 }
