@@ -97,6 +97,19 @@ line-height: 150%;
 ;
   
 }
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
 
 
 /* Mobile */
@@ -123,10 +136,13 @@ line-height: 150%;
   .nav-links {
     display: none;
   }
+  
+  .menu-button {
+    display: block;
+  }
 
   .main-nav .button {
-    width: 100px;
-    height: 45px;
+    display: none;
   }
 
   .navbar-logo img {

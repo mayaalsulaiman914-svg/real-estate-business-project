@@ -1,9 +1,13 @@
 
 import "./Navbar.css";
+import { useState } from "react";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
 
 function Navbar() {
+  
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="navbar">
       {/* Top Navigation */}
@@ -39,7 +43,42 @@ function Navbar() {
           <Button>
             Contact Us
           </Button>
+          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+                <img src="/assets/img/Select Icon.png" alt="Menu" />
+          </button>
         </Container>
+        
+        {/* Mobile Navigation */}
+        {menuOpen && (
+          <ul className="mobile-nav-links">
+
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
+                About Us
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/propertydetails" onClick={() => setMenuOpen(false)}>
+                Properties
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/services" onClick={() => setMenuOpen(false)}>
+                Services
+              </Link>
+            </li>
+
+          </ul>
+        )}
+
       </nav>
     </header>
   );
