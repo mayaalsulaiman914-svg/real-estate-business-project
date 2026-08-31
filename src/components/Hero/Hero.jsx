@@ -10,7 +10,7 @@ function Hero({ title,
                 image,
                 children}) {
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="hero-main">
                 <div className="hero-content">
                     <SectionHeading
