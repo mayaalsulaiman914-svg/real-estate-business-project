@@ -11,14 +11,13 @@ import Container from './components/Container/Container'
 import Button from './components/Button/Button'
 import properties from './data/properties'
 import Stats from './components/Stats/Stats'
+import Navbar from './components/Navbar/Navbar'
  
-
-
+ 
 function App() {
-
-
   return (
-    <>
+      <>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
@@ -36,9 +35,11 @@ function App() {
               <Button>Explore Properties</Button>
       </Container>
     </Section>  
+   
  
     </>
-  )
+
+  );
 }
 
 export default App
