@@ -1,10 +1,12 @@
 .hero-stats{
     display: flex;
+    width: 100%;
+    max-width: 630px;
     gap: 16px;
     margin-top: 50px;
     .stat-card{
         flex: 1;
-        min-width: 193px;
+        min-width: 0;
         padding: 14px 20px;
         background-color: var(--second-background );
         border: 1px solid  var(--primary-border);

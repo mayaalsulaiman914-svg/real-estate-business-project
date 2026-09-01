@@ -10,6 +10,7 @@ import SectionHeading from './components/SectionHeading/SectionHeading'
 import Container from './components/Container/Container'
 import Button from './components/Button/Button'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
  
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Button>Explore Properties</Button>
       </Container>
     </Section>
+    <Footer/>
     </>
 
   );
