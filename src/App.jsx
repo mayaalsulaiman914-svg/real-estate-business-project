@@ -12,6 +12,7 @@ import Button from './components/Button/Button'
 import properties from './data/properties'
 import Stats from './components/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
  
  
 function App() {
@@ -34,9 +35,8 @@ function App() {
               <SectionHeading title="Start Your Real Estate Journey Today" description="Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance." />
               <Button>Explore Properties</Button>
       </Container>
-    </Section>  
-   
- 
+    </Section>
+    <Footer/>
     </>
 
   );
