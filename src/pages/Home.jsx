@@ -19,9 +19,9 @@ const Home = () => {
   if(storedProperties) {
   setPropertyList(JSON.parse(storedProperties));
   }
- 
+
   },[])
- 
+
   return (
     <div>
         <Hero 
@@ -36,12 +36,13 @@ const Home = () => {
       </Hero>
       <Section className="properties-section" id="properties">
         <Container>
-           <div className="content-text">
+            <div className="content-text">
                 <Stars />
-                <SectionHeading title ={"Featured Properties"} description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.`} />
-           </div>
+                <SectionHeading title ={"Featured Properties"}
+                description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.`} />
+            </div>
             <PropertySlider properties={propertiesList}>
-             
+              
             </PropertySlider>
             
 
