@@ -66,9 +66,7 @@
 
 .properties-section {
   .container {
- 
-    flex-direction: column;
-     
+    flex-direction: column; 
   }
 }
 
@@ -117,5 +115,5 @@
         }
     
   }
-
+ 
  }

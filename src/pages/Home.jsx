@@ -5,7 +5,7 @@ import Stars from "../components/Stars/Stars.jsx"
 import SectionHeading from "../components/SectionHeading/SectionHeading.jsx"
 import Container from "../components/Container/Container.jsx"
 import PropertySlider from '../components/PropertySlider/PropertySlider.jsx'
-import PropertyCard from '../components/PropertyCard/PropertyCard.jsx'
+import PropertyCard from '../components/PropertySlider/PropertyCard.jsx'
 import Hero from '../components/Hero/Hero'
 import QuickServices from '../components/QuickServices/QuickServices'
 
@@ -34,7 +34,7 @@ const Home = () => {
       >
         <QuickServices/>
       </Hero>
-      <Section className="properties-section">
+      <Section className="properties-section" id="properties">
         <Container>
            <div className="content-text">
                 <Stars />

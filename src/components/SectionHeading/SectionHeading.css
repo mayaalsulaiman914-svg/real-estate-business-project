@@ -25,5 +25,15 @@
  
 
 @media screen And (max-width : 992px) {
-  
+  .section-heading {
+    gap: 6px;
+    h1 { 
+          
+          font-size: var(--font-size-2xl);
+          line-height: 150%;
+    }
+    p {
+            font-size: var(--font-size-sm);
+    }
+  }
 }

@@ -1,6 +1,7 @@
 
 import "./Navbar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
 
@@ -17,6 +18,7 @@ function Navbar() {
             <p>✨Discover Your Dream Property with Estatein</p>
             <a href="#"> Learn More</a>
           </div>
+           <img className="exit-button"src="/assets/img/Exite Button.png" alt="Close"/>
         </Container>
       </div>
       {/* Main Navigation */}
@@ -43,11 +45,12 @@ function Navbar() {
           <Button>
             Contact Us
           </Button>
+          <div>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
                 <img src="/assets/img/Select Icon.png" alt="Menu" />
           </button>
-        </Container>
-        
+
+          
         {/* Mobile Navigation */}
         {menuOpen && (
           <ul className="mobile-nav-links">
@@ -78,6 +81,9 @@ function Navbar() {
 
           </ul>
         )}
+         </div>
+        </Container>
+        
 
       </nav>
     </header>
