@@ -9,8 +9,11 @@ import Section from './components/Section/Section'
 import SectionHeading from './components/SectionHeading/SectionHeading'
 import Container from './components/Container/Container'
 import Button from './components/Button/Button'
+import properties from './data/properties'
+import Stats from './components/Stats/Stats'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+ 
  
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
-      <Route path='/propertydetails' element={<PropertyDetails/>} />
+      <Route path='/propertydetails/:id' element={<PropertyDetails />} />
       <Route path='/services' element={<Services/>} />
       <Route path='/contact' element={<Contact/>} />
     </Routes>
