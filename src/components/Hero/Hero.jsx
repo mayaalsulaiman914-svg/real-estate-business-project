@@ -7,19 +7,15 @@ function Hero({ title,
                 description,
                 secondaryButtonText,
                 primaryButtonText,
+                showDecoration = false,
                 image,
-                decorativeImage,
                 children}) {
     return (
         <section className="hero" id="hero">
             <div className="hero-main">
                 <div className="hero-content">
-                    {decorativeImage && ( <img src={decorativeImage}
-                                                alt="decorativeImage"
-                                                className="hero-decorative-img" 
-                                            />
-                                        )}
                     <SectionHeading
+                    showDecoration={showDecoration}
                     title={title}
                     description={description}
                     />
