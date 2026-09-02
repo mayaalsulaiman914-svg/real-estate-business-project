@@ -43,7 +43,12 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
-                
+            }
+            &.full {
+                padding: 0;
+            }
+            &.content {
+                padding-right: 80px;
             }
         }
     }
@@ -71,6 +76,12 @@
                     height: auto;
                     border: 1px solid var(--primary-border);
                     border-radius: 12px;
+                }
+                &.full {
+                    padding: 0;
+                }
+                &.content {
+                    padding-right: 0px;
                 }
             }
             .hero-content {

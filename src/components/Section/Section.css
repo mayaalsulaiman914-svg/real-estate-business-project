@@ -70,6 +70,20 @@
   }
 }
 
+.our-value {
+  .values-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    .section-heading {
+      width: 35%;
+    }
+    .value-card {
+      width: 60%;
+    }
+  }
+}
 
  @media screen And (max-width : 992px) {
   .cta {
@@ -114,6 +128,16 @@
    
         }
     
+  }
+  .our-value {
+    .values-content {
+      flex-direction: column;
+      gap: 40px;
+      .section-heading,
+      .value-card {
+        width: 100%;
+      }
+    }
   }
  
  }
