@@ -17,6 +17,11 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            .hero-decorative-img {
+                width: 55px;
+                height: 24px;
+                margin-bottom: 7px;
+            }
             .section-heading {
                     align-self: self-start;
             }
@@ -75,6 +80,12 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                .hero-decorative-img {
+                    width: 45px;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    align-self: flex-start;
+                }
                 .hero-buttons {
                     width: 100%;
                     margin-top: 40px;
