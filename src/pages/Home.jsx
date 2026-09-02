@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import properties from '../data/properties.js'
 import Section from "../components/Section/Section.jsx"
-import Stars from "../components/Stars/Stars.jsx"
 import SectionHeading from "../components/SectionHeading/SectionHeading.jsx"
 import Container from "../components/Container/Container.jsx"
 import PropertySlider from '../components/PropertySlider/PropertySlider.jsx'
@@ -19,9 +18,9 @@ const Home = () => {
   if(storedProperties) {
   setPropertyList(JSON.parse(storedProperties));
   }
- 
+
   },[])
- 
+
   return (
     <div>
         <Hero 
@@ -36,12 +35,13 @@ const Home = () => {
       </Hero>
       <Section className="properties-section" id="properties">
         <Container>
-           <div className="content-text">
-                <Stars />
-                <SectionHeading title ={"Featured Properties"} description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.`} />
-           </div>
+            <div className="content-text">
+                <SectionHeading showDecoration= {true}
+                title ={"Featured Properties"}
+                description={`Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.`} />
+            </div>
             <PropertySlider properties={propertiesList}>
-             
+              
             </PropertySlider>
             
 

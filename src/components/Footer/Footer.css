@@ -169,27 +169,45 @@
             .footer-links {
                 width: 100%;
                 min-width: 0;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 24px;
+                row-gap: 0;
             }
             .footer-column {
-                padding: 20px 16px;
-                gap: 16px;
+                position: relative;
+                padding: 20px 0;
+                box-sizing: border-box;
                 h3 {
-                    font-size: 16px;
+                    font-size: var(--font-size-md);
                 }
                 a {
-                    font-size: var(--font-size-sm);
+                    font-size: 16px;
                 }
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3),
-                &:nth-child(4) {
-                    border-bottom: 1px solid var(--primary-border);
-                }
-                &:nth-child(odd) {
-                    border-right: 1px solid var(--primary-border);
-                }
+            }
+            /*الخط العمودي بالنص */
+            .footer-column:nth-child(odd)::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -12px;
+                width: 1px;
+                height: 100%;
+                background-color: var(--primary-border);
+            }
+            /* الخط تحت Home + About Us */
+            .footer-column:nth-child(1),
+            .footer-column:nth-child(2) {
+                border-bottom: 1px solid var(--primary-border);
+            }
+            /* الخط تحت Properties + Services */
+            .footer-column:nth-child(3),
+            .footer-column:nth-child(4) {
+                border-bottom: 1px solid var(--primary-border);
+            }
+            /* Contact Us */
+            .footer-column:nth-child(5) {
+                border-bottom: 1px solid var(--primary-border);
             }
         }
         .footer-bottom {
