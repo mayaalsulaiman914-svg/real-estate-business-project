@@ -82,6 +82,7 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            gap: 4px;
             row-gap: 6px;
           
             font-size: var(--font-size-sm);
