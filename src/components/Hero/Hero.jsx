@@ -7,6 +7,7 @@ function Hero({ title,
                 description,
                 secondaryButtonText,
                 primaryButtonText,
+                showDecoration = false,
                 image,
                 children}) {
     return (
@@ -14,17 +15,24 @@ function Hero({ title,
             <div className="hero-main">
                 <div className="hero-content">
                     <SectionHeading
+                    showDecoration={showDecoration}
                     title={title}
                     description={description}
                     />
+                        {(secondaryButtonText || primaryButtonText) && (
                     <div className="hero-buttons">
-                        <Button variant="secondary">
-                            {secondaryButtonText}
-                        </Button>
-                        <Button variant="primary">
-                            {primaryButtonText}
-                        </Button>
+                        {secondaryButtonText && (
+                            <Button variant="secondary">
+                                {secondaryButtonText}
+                            </Button>
+                        )}
+                        {primaryButtonText && (
+                            <Button variant="primary">
+                                {primaryButtonText}
+                            </Button>
+                        )}
                     </div>
+                        )}
                     <Stats/>
                 </div>
                 <div className="hero-image">
