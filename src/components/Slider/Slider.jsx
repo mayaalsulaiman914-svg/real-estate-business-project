@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from 'react'
-import './PropertySlider.css'
-import PropertyCard from './PropertyCard'
-
-const PropertySlider = () => {
- const [properties , setProperties] = useState([])
- const [currentSlide , setCurrentSlide] = useState(0)
-   const cards = properties.length;
-   console.log(cards)
- useEffect(() => {
-  const data = localStorage.getItem("properties");
-  if (data) {
-    setProperties(JSON.parse(data)) 
-  }
- },[])
+import './Slider.css'
+import './Card.css'
  
 
+const Slider = ({items , renderItem}) => {
+ 
+const [currentSlide , setCurrentSlide] = useState(0)
+const cards = items.length;
+ 
 const desktopSlides = [];
-for (let i=0 ; i < properties.length ; i +=3) {desktopSlides.push(properties.slice(i , i + 3))}
-const mobileSlides = properties;
+for (let i=0 ; i < items.length ; i +=3) {desktopSlides.push(items.slice(i , i + 3))}
+
+const mobileSlides = items;
  
-  const nextSlide = () => {
+const nextSlide = () => {
     setCurrentSlide((prev) => {
 
       if (window.innerWidth <= 992) {
-         if (prev >=  mobileSlides.length-1) {
-        return 0;
-      }
+          if (prev >=  mobileSlides.length-1) {
+           return 0;
+               }
       return prev + 1;
       }
 
@@ -39,8 +33,8 @@ const mobileSlides = properties;
  const prevSlide = () => {
     setCurrentSlide((prev) => {
        if(window.innerWidth <= 992) {
-         if(prev <=0) {
-          return mobileSlides.length-1
+           if(prev <=0) {
+           return mobileSlides.length-1
          }
          return prev - 1
        }
@@ -51,26 +45,29 @@ const mobileSlides = properties;
     })
   }
   return (
-    <div className="property-slider">
+    <div className="slider">
         <div className="desktop-slider">
-       <div className="slider-window">
+         <div className="slider-window">
           <div className="slider-track" style={{transform : `translateX(-${currentSlide * 100}%)`}}>
                 {desktopSlides.map((slide , index) => (
                   <div className="slide" key={index}>
-                    {slide.map((property) => (
-                      <PropertyCard key={property.id} property={property} />
-                    ))}
+                    {slide.map((item) => (
+                      <div key={item.id}>
+                      {renderItem(item)} 
+                   
                   </div>
+                    ))}
+                    </div>
                 ))}
           </div>
         </div>
         </div>
-        <div className="mobile-slider">
-       <div className="slider-window">
+      <div className="mobile-slider">
+        <div className="slider-window">
           <div className="slider-track" style={{transform : `translateX(-${currentSlide * 100}%)`}}>
-                {mobileSlides.map((property , index) => (
-                  <div className="slide" key={index}>
-                      <PropertyCard key={property.id} property={property} />
+                {mobileSlides.map((item) => (
+                  <div className="slide" key={item.id}>
+                      {renderItem(item)} 
                    
                   </div>
                 ))}
@@ -87,4 +84,4 @@ const mobileSlides = properties;
   )
 }
 
-export default PropertySlider
+export default Slider
