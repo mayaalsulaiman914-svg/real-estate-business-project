@@ -1,10 +1,10 @@
 import Button from "../Button/Button.jsx"
-import { Link, Navigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
+import './PropertyCard.css'
 
 const PropertyCard = ({property}) => {
-    console.log(property)
   return (
-    <div className='card'>
+    <div className='card property-card'>
       <div className="image"> <img className='image-card' src={property.image} /></div>
      <h2>{property.title}</h2>
      <p className='desc'>{property.description.slice(0,68)}..<Link to={`/PropertyDetails/${property.id}`}>Read more</Link></p>
