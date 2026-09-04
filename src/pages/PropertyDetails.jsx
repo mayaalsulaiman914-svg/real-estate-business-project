@@ -1,6 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import properties from '../data/properties';
+import Container from '../components/Container/Container';
+import Section from '../components/Section/Section';
 
 const PropertyDetails = () => {
   const {id} = useParams();
@@ -13,10 +15,22 @@ const PropertyDetails = () => {
   }
   return (
     <div style={{color : "white"}}>
-      <h1>hello from property</h1>
-      <p>{property.title}</p>
-      <p>{property.description}</p>
-      <img src={property.image} />
+      
+    <Section className="hero-property">
+      <Container>
+        <div className="heading-hero"> <div className="title"><h1>{property.title}</h1> <div className='city'>< img  src="/assets/img/Location Icon.png"/> <p>{property.city}</p></div></div>
+         <div className="price"><small>Price</small><p>{property.price}</p></div> </div>
+        <div className="image-hero"> <img src={property.image} /></div> 
+      </Container>
+       </Section>
+       <Section>
+        <Container>
+             
+       <div className="content-hero">
+        <p>{property.description}</p>
+       </div>
+        </Container>
+       </Section>
     </div>
   )
 }
