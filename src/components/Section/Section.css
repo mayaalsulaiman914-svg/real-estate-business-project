@@ -65,6 +65,11 @@
   }
 }
 
+.testimonials-section {
+  .container{
+    flex-direction: column;
+  }
+}
 .our-value {
   .values-content {
     display: flex;
@@ -76,6 +81,76 @@
     }
     .value-card {
       width: 60%;
+    }
+  }
+}
+
+section.hero-property {
+  padding-top: 236px;
+  margin-top: 0;
+  width: 100%;
+ 
+  .container {
+    flex-direction: column;
+    .heading-hero {
+     padding-bottom: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap:20px;
+      h1{
+        font-weight: 600;
+        font-size: var(--font-size-xl);
+        line-height: 150%;
+        letter-spacing: 0%;
+
+      }
+     }
+     .city {
+      padding: 8px;
+      border: 1px solid var(--primary-border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      p{
+    
+font-weight: 500;
+font-size: var(--font-size-sm);
+line-height: 150%;
+letter-spacing: 0%;
+
+      }
+     }
+     .price {
+      small{
+        color: var(--text-secondary-color);
+      }
+     }
+    }
+    .image-hero {
+      box-sizing: border-box;
+      background-color: var(--second-background);
+      border: 1px solid var(--primary-border);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      img {
+        object-fit: cover;
+        border-radius: 12px;
+        max-width: 1200px;
+        max-height: 507px;
+        width: 100%;
+      }
     }
   }
 }
