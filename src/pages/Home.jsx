@@ -9,6 +9,8 @@ import Hero from '../components/Hero/Hero'
 import QuickServices from '../components/QuickServices/QuickServices'
 import clients from "../data/clients.js"
 import ClientCard from '../components/Slider/ClientCard.jsx'
+import faqs from "../data/FaqSlider.js"
+import FaqSlider from "../components/Slider/FaqSlider.jsx"
 
 const Home = () => {
  
@@ -61,9 +63,20 @@ const Home = () => {
             </Slider>
             
 
-
+ 
         </Container>
       </Section>
+      <Section className="faq-section" id="faq">
+  <Container>
+
+    <div className="content-text">
+      <SectionHeading showDecoration={true}
+        title="Frequently Asked Questions"
+        description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."/>
+    </div>
+    <Slider items={faqs} renderItem={(faq) => <FaqSlider faq={faq} />}/>
+  </Container>
+</Section>
   
     </div>
   )
