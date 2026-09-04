@@ -9,6 +9,7 @@ function Hero({ title,
                 primaryButtonText,
                 showDecoration = false,
                 image,
+                imageVariant,
                 children}) {
     return (
         <section className="hero" id="hero">
@@ -35,7 +36,7 @@ function Hero({ title,
                         )}
                     <Stats/>
                 </div>
-                <div className="hero-image">
+                <div className={`hero-image ${imageVariant}`}>
                     <img src= {image} alt="property"/>
                 </div>
             </div>
