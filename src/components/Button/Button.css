@@ -12,6 +12,9 @@
     height: 49px;
     background-color: var(--background-btn);
     border: none;
+      &:hover{
+             background-color: #6126f7;
+        }
 }
 .button.secondary {
     width: 139px;

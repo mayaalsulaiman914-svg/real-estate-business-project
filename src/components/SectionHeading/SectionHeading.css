@@ -1,9 +1,9 @@
 .section-heading {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     h1 {
         margin: 0;
+        margin-bottom: 10px;
         font-size: 46px;
         font-weight: 600;
         font-style: SemiBold;
@@ -21,8 +21,8 @@
         color:var(--text-secondary-color);
     }
     .section-heading-decoration{
-      width: 45px;
-      height: 20px;
+      width: 55px;
+      height: 24px;
       margin-bottom: 5px;
       align-self: flex-start;
   }
@@ -30,14 +30,18 @@
 
 @media screen And (max-width : 992px) {
   .section-heading {
-    gap: 6px;
+ 
     h1 { 
-          
+          margin: 0;
+          margin-bottom: 6px;
           font-size: var(--font-size-2xl);
           line-height: 150%;
     }
     p {
             font-size: var(--font-size-sm);
+    }
+    .section-heading-decoration {
+      margin-bottom: 0;
     }
   }
 }
