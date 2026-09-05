@@ -32,7 +32,7 @@
     } 
     .desktop-slider {
          .slide {
-          grid-template-columns: repeat(3 , minmax(0,1fr));
+          grid-template-columns: repeat(var(--items-per-slide), minmax(0,1fr));
         }
     }
  

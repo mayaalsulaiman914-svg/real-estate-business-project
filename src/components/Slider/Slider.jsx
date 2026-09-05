@@ -3,13 +3,13 @@ import './Slider.css'
 import './Card.css'
  
 
-const Slider = ({items , renderItem}) => {
+const Slider = ({items , renderItem, desktopItemsPerSlide = 3}) => {
  
 const [currentSlide , setCurrentSlide] = useState(0)
 const cards = items.length;
  
 const desktopSlides = [];
-for (let i=0 ; i < items.length ; i +=3) {desktopSlides.push(items.slice(i , i + 3))}
+for (let i=0 ; i < items.length ; i +=desktopItemsPerSlide) {desktopSlides.push(items.slice(i , i + desktopItemsPerSlide))}
 
 const mobileSlides = items;
  
@@ -45,7 +45,7 @@ const nextSlide = () => {
     })
   }
   return (
-    <div className="slider">
+    <div className="slider" style={{"--items-per-slide": desktopItemsPerSlide}}>
         <div className="desktop-slider">
          <div className="slider-window">
           <div className="slider-track" style={{transform : `translateX(-${currentSlide * 100}%)`}}>

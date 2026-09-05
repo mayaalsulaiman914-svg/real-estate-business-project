@@ -80,6 +80,13 @@
   }
 }
 
+.our-value-clients {
+  .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
  @media screen And (max-width : 992px) {
    section {
      margin-top: 66px;

@@ -1,0 +1,85 @@
+.client-company-card {
+    width: 100%;
+    padding: 40px;
+    background-color: var(--primary-background);
+    border: 1px solid var(--primary-border);
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 8px #191919;
+    .client-company-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-bottom: 30px;
+        span {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--text-secondary-color);
+            font-size: 16px;
+        }
+        h2 {
+            color: var(--text-primary-color);
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+        .button.secondary {
+            --secondry-button-bg: #1A1A1A
+        }
+    }
+    .client-company-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+        .info-item {
+            padding: 0 30px;
+            &:first-child {
+                padding-left: 0;
+                border-right: 1px solid var(--primary-border);
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            .info-title {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                margin-bottom: 14px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                }
+                span {
+                    color: var(--text-secondary-color);
+                    font-size: var(--font-size-sm);
+                    font-weight: 500;
+                }
+            }
+            p {
+                color: var(--text-primary-color);
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+    .client-company-quote {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border: 1px solid var(--primary-border);
+        border-radius: 12px;
+        background-color: var(--primary-background);
+        img {
+                max-width: 492px;
+                height: 27px;
+                object-fit: contain;
+        }
+        p {
+            color: var(--text-primary-color);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+}

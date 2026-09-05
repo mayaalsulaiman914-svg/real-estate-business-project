@@ -5,6 +5,7 @@ import SectionHeading from '../components/SectionHeading/SectionHeading'
 import ValueCard from '../components/ValueCard/ValueCard'
 import Section from '../components/Section/Section'
 import values from '../components/ValueCard/ValueCardData'
+import Clients from '../components/Slider/Clients'
 
 const About = () => {
   return (
@@ -29,6 +30,16 @@ const About = () => {
             />
             <ValueCard values={values} />
           </div>
+        </Container>
+      </Section>
+      <Section className="our-value-clients">
+        <Container>
+          <SectionHeading
+            showDecoration={true}
+            title="Our Valued Clients"
+            description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
+            />
+            <Clients/>
         </Container>
       </Section>
     </div>
