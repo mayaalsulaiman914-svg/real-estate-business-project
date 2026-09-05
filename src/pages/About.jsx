@@ -2,10 +2,14 @@ import React from 'react'
 import Hero from '../components/Hero/Hero'
 import Container from '../components/Container/Container'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
-import ValueCard from '../components/ValueCard/ValueCard'
 import Section from '../components/Section/Section'
-import values from '../components/ValueCard/ValueCardData'
 import Clients from '../components/Slider/Clients'
+import Section from "../components/Section/Section.jsx";
+import SectionHeading from "../components/SectionHeading/SectionHeading.jsx";
+import Container from "../components/Container/Container.jsx";
+import achievements from "../data/Achievement.js";
+import Achievement from "../components/Achievement/Achievement.jsx";
+import "./About.css";
 
 const About = () => {
   return (
@@ -20,17 +24,23 @@ const About = () => {
         imageVariant= "content"
       >
       </Hero>
-      <Section className="our-value">
-        <Container>
-          <div className="values-content">
-            <SectionHeading
-            showDecoration={true}
-            title="Our Values"
-            description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
-            />
-            <ValueCard values={values} />
-          </div>
-        </Container>
+      <Section className="about-section">
+       <Container>
+        <div className="content-text">
+          <SectionHeading showDecoration={true}
+          title="Our Achievements"
+          description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."/>
+       </div>
+       <div className="achievements-container">
+       {achievements.map((achievement) => (
+        <Achievement
+          key={achievement.id}
+          title={achievement.title}
+          description={achievement.description} />
+        ))}
+      </div>
+       
+      </Container>
       </Section>
       <Section className="our-value-clients">
         <Container>
