@@ -6,6 +6,7 @@ import Container from "../components/Container/Container.jsx";
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
+import Meet from "../components/Meet/Meet.jsx";
 
 
 const About = () => {
@@ -39,6 +40,7 @@ const About = () => {
        
       </Container>
       </Section>
+      <Meet/>
     </div>
   )
 }
