@@ -43,15 +43,16 @@ const clients = [
 
 const Clients = () => {
     return (
-        <section className="clients">
+        <div className="clients">
             <Slider
                 items={clients}
                 renderItem={(client) => (
                     <ClientCompanyCard client={client} />
                 )}
                 desktopItemsPerSlide={2}
+                gap={40}
             />
-        </section>
+        </div>
     );
 };
 

@@ -3,7 +3,7 @@ import './Slider.css'
 import './Card.css'
  
 
-const Slider = ({items , renderItem, desktopItemsPerSlide = 3}) => {
+const Slider = ({items , renderItem, desktopItemsPerSlide = 3, gap=20}) => {
  
 const [currentSlide , setCurrentSlide] = useState(0)
 const cards = items.length;
@@ -45,7 +45,7 @@ const nextSlide = () => {
     })
   }
   return (
-    <div className="slider" style={{"--items-per-slide": desktopItemsPerSlide}}>
+    <div className="slider" style={{"--items-per-slide": desktopItemsPerSlide, "--slide-gap": `${gap}px`}}>
         <div className="desktop-slider">
          <div className="slider-window">
           <div className="slider-track" style={{transform : `translateX(-${currentSlide * 100}%)`}}>

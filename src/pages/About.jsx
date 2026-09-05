@@ -4,9 +4,6 @@ import Container from '../components/Container/Container'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
 import Section from '../components/Section/Section'
 import Clients from '../components/Slider/Clients'
-import Section from "../components/Section/Section.jsx";
-import SectionHeading from "../components/SectionHeading/SectionHeading.jsx";
-import Container from "../components/Container/Container.jsx";
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
