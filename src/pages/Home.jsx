@@ -36,6 +36,7 @@ const Home = () => {
         secondaryButtonText ="Learn More"
         primaryButtonText = "Browse Properties"
         image = "/assets/img/hero1.png"
+        imageVariant= "full"
       >
         <QuickServices/>
       </Hero>
