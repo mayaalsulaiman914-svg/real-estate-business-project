@@ -1,0 +1,18 @@
+.about-section .container{
+    flex-direction: column;
+}
+.achievements-container {
+    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .achievements-container {
+    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
