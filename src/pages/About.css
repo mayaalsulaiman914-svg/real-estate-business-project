@@ -2,7 +2,7 @@
     flex-direction: column;
 }
 .achievements-container {
-    margin-top: 40px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;

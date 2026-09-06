@@ -7,7 +7,8 @@ const CostItem = ({title ,price, description}) => {
       <p className='title'>{title}</p>
       <div className="content">
         <h3>{price}</h3>
-        <p className='desc'>{description}</p>
+        {description && (<p className='desc'>{description}</p>)}
+      
       </div>
     </div>
   )

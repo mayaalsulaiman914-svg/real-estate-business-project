@@ -23,6 +23,7 @@
           grid-template-columns: repeat(var(--items-per-slide),minmax(0, 1fr));
           gap: var(--slide-gap);
           box-sizing: border-box; 
+         
         
         }
 
@@ -81,6 +82,7 @@
                 .slider-track {
                       .slide {     
                      grid-template-columns: 1fr;
+                       justify-items: center;
                 
             }
                 }
