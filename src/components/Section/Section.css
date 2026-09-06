@@ -85,6 +85,12 @@
   }
 }
 
+.our-value-clients {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 section.hero-property {
   padding-top: 236px;
   margin-top: 0;

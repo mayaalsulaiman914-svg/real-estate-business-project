@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
-import Section from "../components/Section/Section.jsx";
-import SectionHeading from "../components/SectionHeading/SectionHeading.jsx";
-import Container from "../components/Container/Container.jsx";
+import Container from '../components/Container/Container'
+import SectionHeading from '../components/SectionHeading/SectionHeading'
+import Section from '../components/Section/Section'
+import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
-
 
 const About = () => {
   return (
@@ -38,6 +38,16 @@ const About = () => {
       </div>
        
       </Container>
+      </Section>
+      <Section className="our-value-clients">
+        <Container>
+          <SectionHeading
+            showDecoration={true}
+            title="Our Valued Clients"
+            description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
+            />
+            <Clients/>
+        </Container>
       </Section>
     </div>
   )
