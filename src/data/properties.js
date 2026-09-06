@@ -28,7 +28,7 @@ const properties = [
         //Total Initial Costs
         Totalinitialcosts : {
             Listingprice : "1,250,000" ,
-            Additionalfees : "29,700" ,
+            additionalFees : "29,700" ,
             Downpayment : "250,000" ,
             Mortgageamount : "1,000,000",
         },

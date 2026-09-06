@@ -1,0 +1,35 @@
+.cost-item {
+    line-height: 150%;
+    letter-spacing: 0%;
+    &:nth-child(2) , &:nth-child(4) {
+        border-left: 1px solid var(--primary-border);
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: var(--text-secondary-color);
+         font-weight: 500;
+        font-size: var(--font-size-sm);
+    }
+    .title {
+        padding-bottom: 12px;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        gap:6px;
+           h3 {
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: var(--font-size-lg);
+    }
+    .desc {
+        padding: 6px 12px;
+        background-color: var(--second-background);
+        border: 1px solid var(--primary-border);
+        border-radius: 28px;
+    }
+    }
+  
+}
