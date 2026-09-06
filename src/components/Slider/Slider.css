@@ -23,6 +23,7 @@
           grid-template-columns: repeat(var(--items-per-slide),minmax(0, 1fr));
           gap: var(--slide-gap);
           box-sizing: border-box; 
+          padding: 8px;
         
         }
 
