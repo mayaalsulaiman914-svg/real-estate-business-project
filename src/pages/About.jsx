@@ -7,7 +7,7 @@ import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
-
+import NavigatingSection from '../components/NavigatingSection/NavigatingSection'
 const About = () => {
   return (
     <div>
@@ -18,8 +18,7 @@ const About = () => {
         We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach,
         forged valuable partnerships, and gained the trust of countless clients."
         image = "/assets/img/hero2 page2.png"
-        imageVariant= "content"
-      >
+        imageVariant= "content">
       </Hero>
       <Section className="about-section">
        <Container>
@@ -36,19 +35,9 @@ const About = () => {
           description={achievement.description} />
         ))}
       </div>
-       
       </Container>
       </Section>
-      <Section className="our-value-clients">
-        <Container>
-          <SectionHeading
-            showDecoration={true}
-            title="Our Valued Clients"
-            description="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
-            />
-            <Clients/>
-        </Container>
-      </Section>
+      <NavigatingSection/>
     </div>
   )
 }

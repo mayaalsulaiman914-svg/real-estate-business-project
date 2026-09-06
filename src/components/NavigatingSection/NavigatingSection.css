@@ -1,0 +1,187 @@
+
+.estatein-process-section .container {
+  width: 100%;
+}
+
+.estatein-process {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.estatein-process__heading {
+  width: 100%;
+  max-width: 100%;
+}
+
+.estatein-process__heading h2 {
+  margin: 0 0 14px;
+  color: var(--text-primary-color);
+  font-family: inherit;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.estatein-process__heading p {
+  margin: 0;
+  max-width: 1280px;
+  color: var(--text-secondary-color);
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.estatein-process__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.estatein-process__item {
+  min-width: 0;
+}
+
+.estatein-process__step {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-left: 1px solid var(--primary-border);
+  color: var(--text-primary-color);
+  font-family: inherit;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.estatein-process__card {
+  position: relative;
+  min-height: 258px;
+  height: calc(100% - 70px);
+  padding: 50px;
+  overflow: hidden;
+  border: 1px solid var(--primary-border);
+  border-radius: 0 12px 12px 12px;
+  background: var(--primary-background);
+}
+
+.estatein-process__card::before,
+.estatein-process__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.estatein-process__card::before {
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    var(--background-btn) 0%,
+    rgba(112, 59, 247, 0) 100%
+  );
+}
+
+.estatein-process__card::after {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--background-btn) 0%,
+    rgba(112, 59, 247, 0) 100%
+  );
+}
+
+.estatein-process__card h3 {
+  margin: 0 0 20px;
+  color: var(--text-primary-color);
+  font-family: inherit;
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.estatein-process__card p {
+  margin: 0;
+  color: var(--text-secondary-color);
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 1200px) {
+  .estatein-process {
+    gap: 60px;
+  }
+
+  .estatein-process__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .estatein-process__card {
+    padding: 36px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .estatein-process {
+    gap: 40px;
+  }
+
+  .estatein-process__heading h2 {
+    margin-bottom: 8px;
+    font-size: var(--font-size-2xl);
+    line-height: 1.5;
+  }
+
+  .estatein-process__heading p {
+    font-size: var(--font-size-sm);
+  }
+
+  .estatein-process__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .estatein-process__step {
+    min-height: 58px;
+    padding: 0 16px;
+    font-size: var(--font-size-md);
+  }
+
+  .estatein-process__card {
+    min-height: 0;
+    height: auto;
+    padding: 30px;
+    border-radius: 0 10px 10px 10px;
+  }
+
+  .estatein-process__card h3 {
+    margin-bottom: 14px;
+    font-size: var(--font-size-lg);
+  }
+
+  .estatein-process__card p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .estatein-process__card {
+    padding: 24px;
+  }
+}
