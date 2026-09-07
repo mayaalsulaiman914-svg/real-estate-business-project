@@ -1,12 +1,13 @@
 .cost-item {
     line-height: 150%;
     letter-spacing: 0%;
-    &:nth-child(2) , &:nth-child(4) {
-        border-left: 1px solid var(--primary-border);
-        padding-left: 20px;
-        margin-bottom: 30px;
+    width: 100%;
+    padding-right: 24px;
+    &:nth-child(1):not(:last-child) {
+        border-right: 1px solid var(--primary-border);
+        margin-right: 20px;
     }
-
+    
     p {
         color: var(--text-secondary-color);
          font-weight: 500;
@@ -18,7 +19,7 @@
     .content {
         display: flex;
         align-items: center;
-        gap:6px;
+        gap:12px;
            h3 {
             font-weight: 600;
             font-style: SemiBold;
@@ -32,4 +33,28 @@
     }
     }
   
+}
+
+@media screen And (max-width: 992px) {
+    .cost-item {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 0;
+         &:nth-child(1):not(:last-child) {
+            border-right: none;
+            border-bottom: 1px solid var(--primary-border);
+            padding-bottom: 20px;
+            margin-right: 0;
+         }
+         .content {
+            h3 {
+                font-size: var(--font-size-md);
+            }
+             .desc {
+            border-radius: 6px;
+         }
+
+         }
+         
+    }
 }

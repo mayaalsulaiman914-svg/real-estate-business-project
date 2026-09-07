@@ -1,0 +1,15 @@
+.meet-section .container {
+    flex-direction: column;
+}
+
+.meet-content {
+    width: 100%;
+}
+
+.meet-cards {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
