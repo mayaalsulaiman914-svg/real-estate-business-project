@@ -4,6 +4,8 @@ import CostItem from './CostItem.jsx'
 import  './PropertyCost.css'
 
 const PropertyCost = ({title, items}) => {
+  const rows =[]
+  for(let i = 0 ; i< items.length ; i+=2) {rows.push(items.slice(i , i+2))}
   return (
     <div className='property-cost'>
       <div className="title-cost">
@@ -11,11 +13,15 @@ const PropertyCost = ({title, items}) => {
         <Button variant = "secondary">Learn More</Button>
       </div>
       <div className="content-cost">
-       {items.map ((item) => (
-        <CostItem key={item.title} title={item.title} price={item.price} description={item.description} />
+        {
+          rows.map((row,index) => (<div className='row' key={index} style={{borderBottom : index !== rows.length -1 ? "1px solid var(--primary-border)" : "none"}}>
+              {row.map ((item) => (
+              <CostItem key={item.title} title={item.title} price={item.price} description={item.description} />
        ))}
-       <div className="diveder one"></div>
-       <div className="diveder two"></div>
+          </div>))
+        }
+      
+   
       </div>
     </div>
   )
