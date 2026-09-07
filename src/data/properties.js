@@ -43,7 +43,7 @@ const properties = [
     } ,
     {
         id : 2,
-        type: "Villa",
+        type: "Shop",
         title : "Metropolitan Haven" ,
         city : "Malibu, California" ,
         price : "$550,000" ,
@@ -85,7 +85,7 @@ const properties = [
     },
     {
         id : 3,
-        type: "Villa",
+        type: "Shop",
         title : "Rustic Retreat Cottage" ,
         city : "Malibu, California" ,
         price : "$550,000" ,
@@ -127,7 +127,7 @@ const properties = [
     },
    {
     id: 4,
-    type: "Villa",
+    type: "Office",
     title: "Oceanview Paradise Villa",
     city: "Miami, Florida",
     price: "$1,250,000",
@@ -165,7 +165,7 @@ const properties = [
     },
     {
     id: 5,
-    type: "Villa",
+    type: "Office",
     title: "Modern City Residence",
     city: "New York, New York",
     price: "$875,000",
@@ -241,7 +241,7 @@ const properties = [
      },
     {
     id: 7,
-    type: "Villa",
+    type: "Shop",
     title: "Rustic Forest Retreat",
     city: "Aspen, Colorado",
     price: "$720,000",
@@ -317,7 +317,7 @@ const properties = [
   },
     {
     id: 9,
-    type: "Villa",
+    type: "Office",
     title: "Skyline Luxury Penthouse",
     city: "Chicago, Illinois",
     price: "$1,450,000",
@@ -353,6 +353,237 @@ const properties = [
       Propertyinsurance: "115",
     },
   },
+  {
+    id: 10,
+    type: "Shop",
+    title: "Mountain View Market",
+    city: "Denver, Colorado",
+    price: "$580,000",
+    bedrooms: "2",
+    bathrooms: "2",
+    area: "1900",
+    image: "/assets/img/photo-slider-10.jpg",
+    description:
+      "Discover the Mountain View Market, a welcoming commercial property surrounded by beautiful mountain scenery. With spacious interiors, practical facilities, and a convenient location, this property offers an excellent opportunity for business owners looking for comfort, accessibility, and long-term value.",
+
+    additionalFees: {
+      Propertytransfertax: "11,600",
+      Legalfees: "1,900",
+      Homeinspection: "400",
+      Propertyinsurance: "800",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "580",
+      Homeownersassociationfee: "120",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "580,000",
+      Additionalfees: "14,700",
+      Downpayment: "116,000",
+      Mortgageamount: "464,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "580",
+      HomeownersAssociationFee: "120",
+      Propertyinsurance: "75",
+    },
+  },
+
+  {
+    id: 11,
+    type: "Shop",
+    title: "Downtown Business Corner",
+    city: "Miami, Florida",
+    price: "$890,000",
+    bedrooms: "3",
+    bathrooms: "2",
+    area: "2500",
+    image: "/assets/img/photo-slider-11.webp",
+    description:
+      "Step into the Downtown Business Corner, a modern and versatile commercial property designed for successful business operations. Featuring generous interior space, modern finishes, and a prime urban setting, this property provides an ideal environment for growth and investment.",
+
+    additionalFees: {
+      Propertytransfertax: "17,800",
+      Legalfees: "2,700",
+      Homeinspection: "500",
+      Propertyinsurance: "1,100",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "890",
+      Homeownersassociationfee: "180",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "890,000",
+      Additionalfees: "22,100",
+      Downpayment: "178,000",
+      Mortgageamount: "712,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "890",
+      HomeownersAssociationFee: "180",
+      Propertyinsurance: "95",
+    },
+  },
+
+  {
+    id: 12,
+    type: "Villa",
+    title: "Elegant Sunset Villa",
+    city: "Los Angeles, California",
+    price: "$980,000",
+    bedrooms: "4",
+    bathrooms: "3",
+    area: "2600",
+    image: "/assets/img/photo-slider-12.png.crdownload",
+    description:
+      "Experience the beauty of the Elegant Sunset Villa. This sophisticated home combines spacious living areas, stylish interiors, private outdoor spaces, and beautiful surroundings to create a peaceful and luxurious lifestyle perfect for families and entertaining.",
+
+    additionalFees: {
+      Propertytransfertax: "19,600",
+      Legalfees: "2,800",
+      Homeinspection: "500",
+      Propertyinsurance: "1,200",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "980",
+      Homeownersassociationfee: "250",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "980,000",
+      Additionalfees: "24,100",
+      Downpayment: "196,000",
+      Mortgageamount: "784,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "980",
+      HomeownersAssociationFee: "250",
+      Propertyinsurance: "100",
+    },
+  },
+
+  {
+    id: 13,
+    type: "Villa",
+    title: "Lakeside Modern Villa",
+    city: "Orlando, Florida",
+    price: "$760,000",
+    bedrooms: "4",
+    bathrooms: "3",
+    area: "2400",
+    image: "/assets/img/photo-slider-13.avif",
+    description:"Welcome to the Lakeside Modern Villa, where contemporary design meets peaceful surroundings. Spacious rooms, elegant finishes, beautiful outdoor areas, and a relaxing atmosphere make this property an ideal choice for comfortable family living.",
+
+    additionalFees: {
+      Propertytransfertax: "15,200",
+      Legalfees: "2,300",
+      Homeinspection: "450",
+      Propertyinsurance: "950",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "760",
+      Homeownersassociationfee: "180",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "760,000",
+      Additionalfees: "18,900",
+      Downpayment: "152,000",
+      Mortgageamount: "608,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "760",
+      HomeownersAssociationFee: "180",
+      Propertyinsurance: "80",
+    },
+  },
+
+  {
+    id: 14,
+    type: "Office",
+    title: "Modern Executive Office",
+    city: "New York, New York",
+    price: "$1,250,000",
+    bedrooms: "4",
+    bathrooms: "3",
+    area: "2700",
+    image: "/assets/img/photo-slider-14.jpg",
+    description:"The Modern Executive Office offers a sophisticated professional environment with spacious interiors, contemporary finishes, and an impressive city setting. Designed for productivity and comfort, this property is an excellent opportunity for businesses seeking a premium workspace.",
+
+    additionalFees: {
+      Propertytransfertax: "25,000",
+      Legalfees: "3,200",
+      Homeinspection: "600",
+      Propertyinsurance: "1,300",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "1,250",
+      Homeownersassociationfee: "450",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "1,250,000",
+      Additionalfees: "30,100",
+      Downpayment: "250,000",
+      Mortgageamount: "1,000,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "1,250",
+      HomeownersAssociationFee: "450",
+      Propertyinsurance: "110",
+    },
+  },
+
+  {
+    id: 15,
+    type: "Office",
+    title: "Urban Business Suite",
+    city: "Seattle, Washington",
+    price: "$1,080,000",
+    bedrooms: "3",
+    bathrooms: "2",
+    area: "2200",
+    image: " /assets/img/photo-slider-15.jpg",
+    description:"Discover the Urban Business Suite, a stylish and functional office property located in a vibrant metropolitan setting. With flexible spaces, modern interiors, and convenient access to essential city amenities, it provides an ideal environment for established businesses and growing teams.",
+
+    additionalFees: {
+      Propertytransfertax: "21,600",
+      Legalfees: "2,900",
+      Homeinspection: "550",
+      Propertyinsurance: "1,150",
+    },
+
+    MonthlyCosts: {
+      Propertytaxes: "1,080",
+      Homeownersassociationfee: "350",
+    },
+
+    Totalinitialcosts: {
+      Listingprice: "1,080,000",
+      Additionalfees: "26,200",
+      Downpayment: "216,000",
+      Mortgageamount: "864,000",
+    },
+
+    Monthlyexpenses: {
+      Propertytaxes: "1,080",
+      HomeownersAssociationFee: "350",
+      Propertyinsurance: "90",
+    },
+  },
+  
 ];
 
 

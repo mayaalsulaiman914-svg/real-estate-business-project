@@ -1,26 +1,37 @@
          .property-card {
               max-height: 660px;
               padding: 30px;
-            .image {
-            width: 100%;
-            height: 255px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in;
-                 &:hover {
-                 transform: scale(1.05);
+              .image {
+                    width: 100%;
+                    height: 255px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    transition: transform 0.3s ease-in;
+                        &:hover {
+                        transform: scale(1.05);
+                    }
+                    .image-card {
+                    align-self: center;
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 353px;
+                    height: 100%;
+                
+                }
+                }
+            .city {
+                padding: 6px 12px;
+                margin-bottom: 6px;
+                border: 1px solid var(--primary-border);
+                background-color: var(--second-background);
+                border-radius: 28px;
+                width: fit-content;
+                p {
+                    font-weight: 500;
+                    font-size: var(--font-size-sm);
+                }
             }
-             .image-card {
-            align-self: center;
-            width: 100%;
-            object-fit: cover;
-            max-width: 353px;
-            height: 100%;
-        
-           }
-          }
-         
            .desc {   
                 color: var(--text-secondary-color);
                 margin-bottom: 24px;
@@ -44,7 +55,6 @@
             flex-wrap: wrap;
             gap: 4px;
             row-gap: 6px;
-          
             font-size: var(--font-size-sm);
             .back {
                 box-sizing: border-box;
@@ -56,6 +66,10 @@
                 border-radius: 28px;
                 border: 1px solid var(--primary-border);
                 background-color: var(--second-background );
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
 
             }
            }
