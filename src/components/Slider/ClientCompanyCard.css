@@ -5,7 +5,7 @@
     background-color: var(--primary-background);
     border: 1px solid var(--primary-border);
     border-radius: 12px;
-    box-shadow: 0px 0px 0px 8px #191919;
+    outline: 8px solid #191919;
     .client-company-header {
         display: flex;
         align-items: center;
