@@ -324,6 +324,17 @@ letter-spacing: 0%;
     }
   }
 }
+.Unlock-Property-Value {
+  .container {
+    flex-direction: column;
+    gap: 80px;
+    .services-cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+}
 
  @media screen And (max-width : 992px) {
    section {
