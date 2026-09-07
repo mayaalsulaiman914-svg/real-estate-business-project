@@ -1,14 +1,15 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
-import Section from "../components/Section/Section.jsx";
-import SectionHeading from "../components/SectionHeading/SectionHeading.jsx";
-import Container from "../components/Container/Container.jsx";
+import Container from '../components/Container/Container'
+import SectionHeading from '../components/SectionHeading/SectionHeading'
+import Section from '../components/Section/Section'
+import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
 import Meet from "../components/Meet/Meet.jsx";
 
-
+import NavigatingSection from '../components/NavigatingSection/NavigatingSection'
 const About = () => {
   return (
     <div>
@@ -19,8 +20,7 @@ const About = () => {
         We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach,
         forged valuable partnerships, and gained the trust of countless clients."
         image = "/assets/img/hero2 page2.png"
-        imageVariant= "content"
-      >
+        imageVariant= "content">
       </Hero>
       <Section className="about-section">
        <Container>
@@ -37,10 +37,10 @@ const About = () => {
           description={achievement.description} />
         ))}
       </div>
-       
       </Container>
       </Section>
       <Meet/>
+      <NavigatingSection/>
     </div>
   )
 }
