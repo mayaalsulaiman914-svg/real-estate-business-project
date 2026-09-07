@@ -7,6 +7,8 @@ import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
 import "./About.css";
+import Meet from "../components/Meet/Meet.jsx";
+
 import NavigatingSection from '../components/NavigatingSection/NavigatingSection'
 const About = () => {
   return (
@@ -37,6 +39,7 @@ const About = () => {
       </div>
       </Container>
       </Section>
+      <Meet/>
       <NavigatingSection/>
     </div>
   )
