@@ -376,6 +376,7 @@
         }
     
   }
+}
   .our-value {
     .values-content {
       flex-direction: column;
@@ -386,8 +387,6 @@
       }
     }
   }
- 
-   }
    .property-page {
       section.hero-property {
     padding-top: 221px;
