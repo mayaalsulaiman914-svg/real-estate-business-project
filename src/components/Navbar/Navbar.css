@@ -73,7 +73,8 @@ line-height: 150%;
   height: 45px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
   list-style: none;
   position: absolute;
   left: 50%;
@@ -85,6 +86,23 @@ line-height: 150%;
   text-decoration: none;
   font-size: var(--font-size-sm);
   font-weight: 500;
+  border-radius: 8px;
+  white-space: nowrap;
+  &.active {
+    background-color: var(--primary-background);
+  }
+}
+.home-link a {
+  padding: 12px 20px;
+}
+.about-link a {
+  padding: 12px 20px;
+}
+.properties-link a {
+  padding: 14px 24px;
+}
+.services-link a {
+  padding: 12px 20px;
 }
 .main-nav a.btn {
   width: 109px;

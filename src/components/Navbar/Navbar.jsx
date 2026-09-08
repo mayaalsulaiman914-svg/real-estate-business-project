@@ -1,7 +1,7 @@
 
 import "./Navbar.css";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
 
@@ -38,17 +38,17 @@ useEffect(() => {
             <span>Estatein</span>
           </div>
           <ul className="nav-links">
-            <li>
-              <a href="/">Home</a>
+            <li className="home-link">
+              <NavLink to="/">Home</NavLink>
             </li>
-            <li>
-              <a href="/about">About Us</a>
+            <li className="about-link">
+              <NavLink to="/about">About Us</NavLink>
             </li>
             <li>
               <a href="/propertyDetails/1">Properties</a>
             </li>
-            <li>
-              <a href="/services">Services</a>
+            <li className="services-link">
+              <NavLink to="/services">Services</NavLink>
             </li>
           </ul>
           <a className="btn" href="/contact">

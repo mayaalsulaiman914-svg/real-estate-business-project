@@ -10,9 +10,10 @@ function Hero({ title,
                 showDecoration = false,
                 image,
                 imageVariant,
+                showStats = true,
                 children}) {
     return (
-        <section className="hero" id="hero">
+        <section className={`hero ${!image ? "hero-simple" : ""}`} id="hero">
             <div className="hero-main">
                 <div className="hero-content">
                     <SectionHeading
@@ -34,11 +35,13 @@ function Hero({ title,
                         )}
                     </div>
                         )}
-                    <Stats/>
+                    {showStats && <Stats/>}
                 </div>
-                <div className={`hero-image ${imageVariant}`}>
+                {image && (
+                <div className={`hero-image ${imageVariant || ""}`}>
                     <img src= {image} alt="property"/>
                 </div>
+                )}
             </div>
             {children}
         </section>
