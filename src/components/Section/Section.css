@@ -91,7 +91,8 @@
     gap: 0;
   }
 }
-.Unlock-Property-Value {
+.Unlock-Property-Value,
+.Effortless-Property {
   .container {
     flex-direction: column ;
     gap: 80px;
@@ -99,6 +100,9 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      .service-cta {
+        grid-column: span 2;
+      }
     }
   }
 }
@@ -524,12 +528,16 @@
     }
    }
    }
-   .Unlock-Property-Value {
+   .Unlock-Property-Value,
+   .Effortless-Property {
     .container {
       gap: 40px;
       .services-cards{
         grid-template-columns: 1fr;
         gap: 20px;
+        .service-cta {
+          grid-column: span 1;
+        }
       }
     }
   }

@@ -1,0 +1,58 @@
+.service-cta {
+    max-height: 232px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--primary-border);
+    border-radius: 10px;
+    background-image: url("../../assets/img/Abstract Design2.png");
+    background-color: var(--second-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .service-cta-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            line-height: 150%;
+            color: var(--text-primary-color);
+        }
+        .button.secondary {
+            width: 111px;
+            height: 49px;
+            background-color:var(--primary-background);
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-secondary-color);
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width : 992px){
+.service-cta {
+    max-height: 281px;
+    padding: 24px;
+    background-image: url("../../assets/img/Abstract Design3.png");
+    .service-cta-content {
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+            font-size: var(--font-size-lg);
+        }
+        .button.secondary {
+            width: 100%;
+        }
+    }
+    p {
+        font-size: var(--font-size-sm);
+    }
+}
+}
