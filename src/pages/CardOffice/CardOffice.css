@@ -1,0 +1,72 @@
+.office {
+    padding: 40px;
+    border: 1px solid var(--primary-border);
+    color: var(--text-primary-color);
+    max-width: 50%;
+    .title , .desc {      
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.6%;
+    }
+    .title {
+        padding-bottom: 6px;
+        font-size: var(--font-size-sm);
+    }
+    .desc {
+        padding: 10px 0 30px;
+        font-size: 16px;
+        color: var(--text-secondary-color);
+    }
+   h2 {
+        font-weight: 600;
+        font-size: var(--font-size-xl);
+        line-height: 150%;
+        letter-spacing: 0%;
+   }
+   .contact {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: var(--font-size-sm);
+    .rounded {
+        padding: 10px 16px;
+        border: 1px solid var(--primary-border);
+        border-radius: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--second-background);
+        gap: 2px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+   }
+   .primary {
+    width: 100%;
+   }
+}
+
+@media screen And (max-width : 992px) {
+    .office {
+        max-width: 630px;
+        padding: 24px;
+   
+
+        .desc {
+        font-size: var(--font-size-sm);
+        }
+        h2 {
+        font-size: var(--font-size-lg);
+     }
+     .contact {
+    
+    row-gap: 8px;
+    justify-content: space-between;
+     }
+    }
+     
+}
