@@ -91,6 +91,17 @@
     gap: 0;
   }
 }
+.Unlock-Property-Value {
+  .container {
+    flex-direction: column ;
+    gap: 80px;
+    .services-cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+}
 .property-page {
   color: var(--text-primary-color);
   section.hero-property {
@@ -309,17 +320,6 @@
         flex-direction: column;
         gap: 40px;
       }
-    }
-  }
-}
-.Unlock-Property-Value {
-  .container {
-    flex-direction: column;
-    gap: 80px;
-    .services-cards{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
     }
   }
 }

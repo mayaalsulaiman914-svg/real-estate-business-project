@@ -17,7 +17,9 @@ const Services = () => {
           </SectionHeading>
           <div className="services-cards">
           {servicesData.map((service)=> (
-            <ServiceCard key={service.id} icon={service.icon} title={service.title}
+            <ServiceCard key={service.id}
+                          icon={service.icon} 
+                          title={service.title}
             description={service.description} />
           ))}
           </div>
