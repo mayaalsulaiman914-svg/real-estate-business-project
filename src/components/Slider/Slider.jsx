@@ -52,7 +52,7 @@ const nextSlide = () => {
                 {desktopSlides.map((slide , index) => (
                   <div className="slide" key={index}>
                     {slide.map((item) => (
-                      <div key={item.id}>
+                      <div className='container-card' key={item.id}>
                       {renderItem(item)} 
                    
                   </div>

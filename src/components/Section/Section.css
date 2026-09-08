@@ -273,7 +273,7 @@
        
     }
   }
-}
+}}
 
 .comprehensive-pricing {
   .container {
@@ -328,6 +328,48 @@
   }
 }
 
+}
+.office-location {
+  margin-top: 200px;
+  .container {
+  flex-direction: column;
+  .section-heading {
+    p {
+      max-width: 1030px;
+    }
+  }
+
+  .filter-btns{
+    margin-top: 60px;
+    .btns {
+    max-width: 413px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--second-background);
+    border-radius: 8px;
+    .btn {
+      width: 124px;
+      height: 49px;
+      background: none;
+      border-radius: 8px;
+      border:1px solid  var(--primary-border);
+      color: var(--text-primary-color);
+      cursor: pointer;
+      &:hover , &.active {
+        background-color: var(--primary-background);
+      }
+    }
+    }
+  }
+  .filter-cards {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  }
 }
 
 
@@ -541,5 +583,16 @@
       }
     }
   }
+  .office-location {
+    .container {
+      .filter-btns {
+        margin-top: 40px;
+      }
+      .filter-cards {
+        flex-direction: column;
+         align-items: flex-start;
+      }
+    }
+  } 
  }
 

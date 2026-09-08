@@ -13,12 +13,13 @@
     }
     p {
         margin: 0;
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-original);
         line-height: 150%;
         font-weight: 500;
         letter-spacing: 0%;
         font-style: Medium;
         color:var(--text-secondary-color);
+           &.mobile-desc {display: none;}
     }
     .section-heading-decoration{
       width: 55px;
@@ -26,6 +27,7 @@
       margin-bottom: 5px;
       align-self: flex-start;
   }
+  
 }
 
 @media screen And (max-width : 992px) {
@@ -39,6 +41,12 @@
     }
     p {
             font-size: var(--font-size-sm);
+             &.desktop-desc {
+            display: none;
+          }
+          &.mobile-desc {
+            display: block;
+          }
     }
     .section-heading-decoration {
       margin-bottom: 0;
