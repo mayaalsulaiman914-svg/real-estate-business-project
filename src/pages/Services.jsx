@@ -6,10 +6,19 @@ import servicesData from '../data/ServiceCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import ServiceCTA from '../components/ServiceCTA/ServiceCTA'
 import servicesData2 from '../data/ServiceCard2'
+import Hero from '../components/Hero/Hero'
+import QuickServices from '../components/QuickServices/QuickServices'
 
 const Services = () => {
   return (
     <div>
+        <Hero
+        title="Elevate Your Real Estate Experience"
+        description="Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."
+        showStats = {false}
+        >
+          <QuickServices/>
+      </Hero>
       <Section className="Unlock-Property-Value">
         <Container>
           <SectionHeading

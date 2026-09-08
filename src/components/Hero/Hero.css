@@ -52,6 +52,14 @@
             }
         }
     }
+    &.hero-simple {
+        .hero-main {
+            min-height: auto;
+            .hero-content {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen And (max-width : 992px) {
