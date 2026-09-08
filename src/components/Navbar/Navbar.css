@@ -86,11 +86,21 @@ line-height: 150%;
   font-size: var(--font-size-sm);
   font-weight: 500;
 }
-.main-nav .button {
+.main-nav a.btn {
   width: 109px;
   height: 49px;
-  background-color:var(--primary-background); 
+  background-color:var(--background-btn); 
   margin-left: auto;
+  text-decoration: none;
+  color: var(--text-primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: var(--font-size-sm);
+   &:hover{
+             background-color: #6126f7;
+        }
 }
 .menu-button {
   display: none;
@@ -173,7 +183,7 @@ line-height: 150%;
   .menu-button {
     display: block;
   }
-  .main-nav .button {
+  .main-nav a.btn {
     display: none;
   }
   .navbar-logo img {

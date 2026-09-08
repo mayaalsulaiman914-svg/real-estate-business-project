@@ -24,6 +24,10 @@
           gap: var(--slide-gap);
           box-sizing: border-box; 
          padding: 8px;
+         .container-card {
+            display: flex;
+            justify-content: center;
+         }
         
         }
 

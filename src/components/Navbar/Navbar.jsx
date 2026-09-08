@@ -45,15 +45,15 @@ useEffect(() => {
               <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="/propertydetails">Properties</a>
+              <a href="/propertyDetails/1">Properties</a>
             </li>
             <li>
               <a href="/services">Services</a>
             </li>
           </ul>
-          <Button>
+          <a className="btn" href="/contact">
             Contact Us
-          </Button>
+          </a>
           <div>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
                 <img src="/assets/img/Select Icon.png" alt="Menu" />
