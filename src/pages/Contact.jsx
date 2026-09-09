@@ -3,7 +3,7 @@ import Section from '../components/Section/Section'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
 import Container from '../components/Container/Container'
 import offices from '../data/OfficeCard.js'
-import CardOffice from './CardOffice/CardOffice'
+import CardOffice from '../components/CardOffice/CardOffice.jsx'
 
 const Contact = () => {
   const [activeFilter , setActiveFilter] = useState("all")
