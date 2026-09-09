@@ -1,6 +1,6 @@
 import React from 'react'
 import './CardOffice.css'
-import Button from '../../components/Button/Button'
+import Button from '../Button/Button'
 const CardOffice = ({office}) => {
   return (
     <div className='office'>
