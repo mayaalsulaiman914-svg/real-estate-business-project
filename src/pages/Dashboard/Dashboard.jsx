@@ -1,10 +1,11 @@
 import React from 'react'
+import './Dashboard.css'
 
 const Dashboard = () => {
   return (
-    <div style={{marginTop : "200px"}}>
-      <h1 style={{color : "red"}}>Dashboard</h1>
-    </div>
+    <>
+    
+    </>
   )
 }
 
