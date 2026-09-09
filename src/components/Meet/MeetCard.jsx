@@ -6,7 +6,6 @@ const MeetCard = ({ name, jobTitle, image }) => {
     <div className="meet-card">
       <div className="meet-image-wrapper">
         <img src={image} alt={name} className="meet-person-image" />
-
         <img src="/assets/img/BlueTwitterButton.png" alt="Twitter" className="meet-twitter-icon" />
       </div>
       <h2 className="meet-name">{name}</h2>
