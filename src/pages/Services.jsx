@@ -8,7 +8,7 @@ import ServiceCTA from '../components/ServiceCTA/ServiceCTA'
 import servicesData2 from '../data/ServiceCard2'
 import Hero from '../components/Hero/Hero'
 import QuickServices from '../components/QuickServices/QuickServices'
-
+import Smart from "../components/Smart/Smart";
 const Services = () => {
   return (
     <div>
@@ -63,6 +63,7 @@ const Services = () => {
           </div>
         </Container>
       </Section>
+      <Smart />
     </div>
   )
 }
