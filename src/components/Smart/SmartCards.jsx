@@ -2,8 +2,6 @@ import React from "react";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import smartCardsData from "../../data/SmartCard";
 
-import "./SmartCards.css";
-
 const SmartCards = () => {
   return (
     <div className="smart-cards">

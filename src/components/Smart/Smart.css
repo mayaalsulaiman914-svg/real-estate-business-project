@@ -5,19 +5,19 @@
   gap: 50px;
 }
 .smart-left {
-  width: 412px;
-  min-width: 412px;
+  width: 32%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 .smart-left .section-heading {
-  width: 412px;
-  height: 220px;
+  width: 100%;
+  height: auto;
 }
 .smart-cta {
-  width: 412px;
-  height: 298px;
+  width: 100%;
+  min-height: 298px;
   max-height: none;
 }
 .smart-cta-content {
@@ -30,13 +30,12 @@
   color: var(--text-primary-color);
 }
 .smart-cta-content p {
-  width: 332px;
+  width: 100%;
 }
 .smart-cta-content .button {
-  width: 332px;
+  width: 100%;
   height: 49px;
 }
-/* مجموعة الكروت */
 .smart-cards {
   flex: 1;
   min-width: 0;
@@ -44,49 +43,9 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-}
-
-/* الكرت */
-.smart-card {
-  width: 100%;
-  height: 236px;
-  box-sizing: border-box;
-  padding: 40px;
-
-  background-color: var(--primary-background);
-  border: 1px solid var(--primary-border);
+  padding: 10px;
+  background-color: var(--second-background );
   border-radius: 12px;
-}
-/* محتوى الكرت */
-.smart-card-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.smart-card-icon {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.smart-card-icon img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-.smart-card h3 {
-  margin: 0;
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: var(--text-primary-color);
-}
-.smart-card p {
-  width: 100%;
-  margin: 24px 0 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--text-secondary-color);
 }
 
 @media screen and (max-width: 992px) {
@@ -120,12 +79,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-  }
-  .smart-card {
-    width: 100%;
-    height: auto;
-    min-height: 236px;
-    padding: 24px;
+    margin-top: 0;
   }
 }
