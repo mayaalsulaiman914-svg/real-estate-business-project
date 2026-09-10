@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../Section/Section";
 import Container from "../Container/Container";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import ServiceCTA from "../ServiceCTA/ServiceCTA";
 import Button from "../Button/Button";
 import SmartCards from "./SmartCards";
 import "./Smart.css";
