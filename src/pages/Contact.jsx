@@ -4,6 +4,8 @@ import SectionHeading from '../components/SectionHeading/SectionHeading'
 import Container from '../components/Container/Container'
 import offices from '../data/OfficeCard.js'
 import CardOffice from '../components/CardOffice/CardOffice.jsx'
+import Hero from '../components/Hero/Hero'
+import ContactQuick from '../components/Contact/ContactQuick.jsx'
 
 const Contact = () => {
   const [activeFilter , setActiveFilter] = useState("all")
@@ -11,6 +13,16 @@ const Contact = () => {
   )
   return (
     <div>
+      
+        <Hero
+        title="Get in Touch with Estatein"
+        description="Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or feedback you may have. Whether you're looking to buy or sell a property, explore investment opportunities,
+         or simply want to connect, we're just a message away. Reach out to us, and let's start a conversation."
+        showStats = {false}
+        >
+        <ContactQuick/>
+        
+      </Hero>
       <Section className="office-location">
         <Container>
         <SectionHeading title="Discover Our Office Locations" description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you" showDecoration ={true} mobileEnd="team" />
