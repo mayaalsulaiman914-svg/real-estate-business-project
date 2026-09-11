@@ -1,0 +1,101 @@
+.contact-form {
+    width: 100%;
+    margin-top: 60px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    border: 1px solid var(--primary-border);
+    border-radius: 12px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        label {
+            font-weight: 600;
+            font-size: var(--font-size-original);
+            color: var(--text-primary-color);
+            line-height: 150%;
+            letter-spacing: 0%;
+        }
+        input , select , textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid var(--primary-border);
+            border-radius: 6px;
+            padding: 16px 20px;
+            background-color: var(--second-background);
+            outline: none;
+            color: var(--text-primary-color);
+        }
+       input:focus , select:focus , textarea:focus {
+        border-color: var(--background-btn);
+       }
+       select {
+        color: #666666;
+       }
+       &.message {
+
+        grid-column: 1 / -1;
+          textarea {
+        resize: none;
+       }
+       }
+       .error-message {
+        color: rgb(255, 76, 76);
+       }
+      
+    }
+    .form-footer {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            input[type="checkbox"] {
+                accent-color: var(--second-background);
+                width: 24px;
+                height: 24px;
+                border: 1px solid var(--primary-border);
+                background-color: transparent;
+            }
+            span , a {
+                color: var(--text-secondary-color);
+
+            }
+        }
+        .button {
+            width: 191px;
+        }
+    }
+}
+
+@media screen And (max-width : 992px) {
+    .contact-form {
+        max-width: 630px;
+        margin: 60px auto 0;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+
+        .form-group {
+            gap: 10px;
+        }
+       .form-footer {
+        flex-direction: column;
+        gap: 20px;
+        .button {
+            width: 100%;
+            max-width: 317px;
+            margin: 0 auto;
+        }
+       } 
+    }
+    
+}

@@ -330,7 +330,6 @@
 
  
 .office-location {
-  margin-top: 200px;
   .container {
   flex-direction: column;
   .section-heading {
@@ -368,6 +367,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+  }
+  }
+}
+.connect {
+  .container {
+    flex-direction: column;
+     .section-heading {
+    p {
+      max-width: 1030px;
+    }
   }
   }
 }
