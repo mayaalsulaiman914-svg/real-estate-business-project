@@ -44,7 +44,7 @@
   height: 72px;
   overflow: hidden;
   font-size: var(--font-size-sm);
- color: var(--text-secondary-color);
+  color: var(--text-secondary-color);
 }
 /* Mobile */
 @media screen and (max-width: 992px) {
