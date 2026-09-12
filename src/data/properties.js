@@ -583,6 +583,7 @@ const properties = [
       Propertyinsurance: "90",
     },
   },
+ 
   
 ];
 
