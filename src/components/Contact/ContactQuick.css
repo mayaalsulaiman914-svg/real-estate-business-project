@@ -50,7 +50,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 6px;
             color: var(--text-primary-color);
             font-size: 16px;
             font-weight: 600;
@@ -78,7 +78,7 @@
         .contact-quick-icon {
             width: 48px;
             height: 48px;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .contact-quick-arrow {
@@ -92,7 +92,14 @@
 
         .contact-quick-social {
             font-size: var(--font-size-sm);
-            gap: 8px;
+            flex-wrap: wrap;
+            gap: 4px;
+            transform: translateY(8px);
         }
+        .contact-quick-card:nth-child(4) .contact-quick-icon,
+.contact-quick-card:nth-child(4) .contact-quick-social {
+    transform: translateY(25px);
+}
+        
     }
 }
