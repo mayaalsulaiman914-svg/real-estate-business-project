@@ -30,7 +30,7 @@ const ClientCompanyCard = ({ client }) => {
             </div>
         </div>
         <div className="client-company-quote">
-            <img src="/assets/img/Smile.png" alt="" />
+            <h3>What They Said 🤗</h3>
             <p>{client.testimonial}</p>
         </div>
         </div>

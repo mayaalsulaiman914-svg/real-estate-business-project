@@ -1,5 +1,7 @@
 import "./Footer.css";
 import Container from "../Container/Container";
+import { Link } from "react-router-dom";
+import HashLink from "../HashLink/HashLink";
 
 function Footer() {
     return (
@@ -36,37 +38,37 @@ function Footer() {
             <div className="footer-links">
                 <div className="footer-column">
                 <h3>Home</h3>
-                <a href="/#hero">Hero Section</a>
-                <a href="/">Features</a>
-                <a href="/#proerties">Properties</a>
-                <a href="/#testimonials">Testimonials</a>
-                <a href="/">FAQ's</a>
+                <HashLink to="/#hero">Hero Section</HashLink>
+                <HashLink to="/#properties">Features</HashLink>
+                <HashLink to="/">Properties</HashLink>
+                <HashLink to="/#Testimonials">Testimonials</HashLink>
+                <HashLink to="/#faq">FAQ's</HashLink>
                 </div>
                 <div className="footer-column">
                 <h3>About Us</h3>
-                <a href="/about">Our Story</a>
-                <a href="/about">Our Works</a>
-                <a href="/about">How It Works</a>
-                <a href="/about">Our Team</a>
-                <a href="/about">Our Clients</a>
+                <Link to="/about">Our Story</Link>
+                <Link to="/about">Our Works</Link>
+                <Link to="/about">How It Works</Link>
+                <Link to="/about">Our Team</Link>
+                <Link to="/about">Our Clients</Link>
                 </div>
                 <div className="footer-column">
                 <h3>Properties</h3>
-                <a href="/propertydetails">Portfolio</a>
-                <a href="/propertydetails">Categories</a>
+                <Link to="/propertydetails">Portfolio</Link>
+                <Link to="/propertydetails">Categories</Link>
                 </div>
                 <div className="footer-column">
                 <h3>Services</h3>
-                <a href="/services">Valuation Mastery</a>
-                <a href="/services">Strategic Marketing</a>
-                <a href="/services">Negotiation Wizardry</a>
-                <a href="/services">Closing Success</a>
-                <a href="/services">Property Management</a>
+                <Link to="/services">Valuation Mastery</Link>
+                <Link to="/services">Strategic Marketing</Link>
+                <Link to="/services">Negotiation Wizardry</Link>
+                <Link to="/services">Closing Success</Link>
+                <Link to="/services">Property Management</Link>
                 </div>
                 <div className="footer-column">
                 <h3>Contact Us</h3>
-                <a href="/contact">Contact Form</a>
-                <a href="/contact">Our Offices</a>
+                <Link to="/contact">Contact Form</Link>
+                <Link to="/contact">Our Offices</Link>
                 </div>
             </div>
             </Container>
@@ -75,21 +77,21 @@ function Footer() {
             <Container>
             <div className="footer-copyright">
                 <p>©2023 Estatein. All Rights Reserved.</p>
-                <a href="#">Terms & Conditions</a>
+                <Link to="#">Terms & Conditions</Link>
             </div>
             <div className="footer-social">
-                <a href="#">
+                <Link to="#">
                 <img src="/assets/img/facebookIcon (1).png" alt="Facebook" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                 <img src="/assets/img/lin Icon (2).png" alt="LinkedIn" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                 <img src="/assets/img/twitter Icon (3).png" alt="Twitter" />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                 <img src="/assets/img/Youtube Icon (4).png" alt="YouTube" />
-                </a>
+                </Link>
             </div>
             </Container>
         </div>

@@ -73,7 +73,7 @@ line-height: 150%;
   height: 45px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   list-style: none;
   position: absolute;
@@ -90,16 +90,17 @@ line-height: 150%;
   white-space: nowrap;
   &.active {
     background-color: var(--primary-background);
+    border: 1px solid #262626
   }
 }
 .home-link a {
   padding: 12px 20px;
 }
 .about-link a {
-  padding: 12px 20px;
+  padding: 14px 24px;
 }
 .properties-link a {
-  padding: 14px 24px;
+  padding: 12px 20px;
 }
 .services-link a {
   padding: 12px 20px;

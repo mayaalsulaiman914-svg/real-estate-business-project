@@ -12,13 +12,32 @@ import PropertiesDashboard from './pages/Dashboard/PropertiesDashboard'
 import ServicesCardDashboard from './pages/Dashboard/ServicesCardDashboard'
 import FaqDashboard from './pages/Dashboard/FaqDashboard'
 import PropertyDashboardDetails from './pages/Dashboard/PropertyDashboardDetails'
-import AddProperty from './pages/Dashboard/AddProperty'
- 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToHash() {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.substring(1);
+    const scrollToElement = () => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    };
+    setTimeout(scrollToElement, 100);
+  }, [hash]);
+  return null;
+}
  
 function App() {
   return (
       <>
-    <Routes>
+      <ScrollToHash/>
+      <Routes>
       <Route element={<WebsiteLayout/>} >
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
@@ -33,7 +52,7 @@ function App() {
       <Route path='/dashboard/properties/:id' element={<PropertyDashboardDetails />} />
       <Route path='/dashboard/services' element={<ServicesCardDashboard />} />
       <Route path='/dashboard/faqs' element={<FaqDashboard />} />
-     
+
       </Route>
     </Routes>
     </>
