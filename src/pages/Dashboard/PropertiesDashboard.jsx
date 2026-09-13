@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Dashboard.css'
 
 const PropertiesDashboard = () => {
   const [properties , setProperties] = useState([])
@@ -15,11 +16,13 @@ const PropertiesDashboard = () => {
     setProperties(updateProperties)
   }
   return (
-     <div>
-      <h2>Properties</h2>
-      <p>Manage your properties here.</p>
-      <button onClick={() => navigate (`/dashboard/properties/add`)}>Add Property</button>
-       <table>
+     <div className='properties-table'>
+      <h2 className='title'>Properties</h2>
+      <p className='desc'>Manage your properties here.</p>
+      <div className="add-btn">
+      <button  onClick={() => navigate (`/dashboard/properties/add`)}>Add Property</button>
+      </div>
+       <table className='main-table'>
         <thead>
           <tr>
             <th>Id</th>
@@ -40,9 +43,9 @@ const PropertiesDashboard = () => {
                 <td>{property.price}</td>
                 <td>{property.type}</td>
                 <td>Available</td>
-                <td onClick={(e) => e.stopPropagation()}>
-                  <button onClick={()=> navigate(`/dashboard/properties/${property.id}?edit=true`)}>Edit</button>
-                  <button onClick={()=> handleDelete(property.id)}>Delete</button>
+                <td className='edit-delete-btn' onClick={(e) => e.stopPropagation()}>
+                  <button className='edit' onClick={()=> navigate(`/dashboard/properties/${property.id}?edit=true`)}>Edit</button>
+                  <button className='delete' onClick={()=> handleDelete(property.id)}>Delete</button>
                 
                 </td>
             </tr>

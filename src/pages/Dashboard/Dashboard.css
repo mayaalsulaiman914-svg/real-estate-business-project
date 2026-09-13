@@ -35,5 +35,140 @@
   .dashboard-content {
     flex: 1;
     padding: 40px;
+
+     
   }
+.properties-table {
+     .desc {
+      margin: 20px 0;
+     }
+     .add-btn {
+     margin: 30px 0 ;
+     button {
+      width: 130px;
+      height: 50px;
+      padding: 0.6rem 0.7rem;
+      border-radius: 8px;
+      background-color: rgb(0, 102, 255);
+      color: #ffffff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        background-color:rgb(0, 84, 210) ;
+      }
+     }
+     }
+      .main-table {
+        width: 100%;
+        th , td {
+          padding: 0.5rem 0.7rem;
+          text-align: center;
+         
+        }
+        th , td{
+             border-bottom: 1px solid var(--primary-border);
+        }
+        tbody {
+            td{
+              height: 100%;
+              &.edit-delete-btn {
+               min-height: 70.8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+               .edit, .delete {
+                width: 100%;
+                padding: 0.6rem 1rem;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                color: #ffffff;
+               
+               }
+               .edit {
+                  background-color: rgb(26, 194, 0);
+                  &:hover {
+                    background-color:rgb(24, 179, 0) ;
+                  }
+               }
+               .delete {
+                background-color: rgb(239, 0, 0);
+                &:hover {
+                  background-color:rgb(211, 1, 1) ;
+                }
+               }
+            }
+            }
+             
+          }
+          
+      }
+    }
+.add-property , .edit-property {
+  h1 {
+    margin: 30px 0;}
+
+  .add-form , .edit-form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      gap: 16px;
+       
+      input , textarea {
+        padding: 0.5rem;
+        background-color: var(--second-background);
+        border: none;
+        outline: none;
+        border: 1px solid var(--primary-border);
+        color: var(--primary-color);
+        border-radius: 8px;
+      }
+      .col , .group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        textarea {
+          resize: none;
+          vertical-align: auto;
+        }
+        
+      }
+       .container-group {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          h4 {
+            color: cadetblue;
+          }
+        }
+      .add , .save {
+        grid-column: 1 /-1;
+        margin-top: 20px;
+        button {
+          width: 150px;
+          height: 50px;
+          padding: 0.5rem 1rem;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          border-radius: 8px;
+          cursor: pointer;
+          &.add-btn {
+          background-color:rgb(0, 102, 255) ;
+        }
+        &.save-btn {
+          background-color:rgb(26, 194, 0) ;
+        }
+        }
+        
+        
+      }
+    }
+  
+}
 }

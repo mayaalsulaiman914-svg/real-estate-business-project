@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import './Dashboard.css'
+ 
 
 const DashboardLayout = () => {
   return (
@@ -12,6 +12,7 @@ const DashboardLayout = () => {
             <Link to='/dashboard/properties'> Properties</Link>
             <Link to='/dashboard/services'>Services Card</Link>
             <Link to='/dashboard/faqs'> Faq Questions</Link>
+            <Link to='/'> Back to website</Link>
         </nav>
      </aside>
      <main className='dashboard-content'>
