@@ -12,6 +12,7 @@ import PropertiesDashboard from './pages/Dashboard/PropertiesDashboard'
 import ServicesCardDashboard from './pages/Dashboard/ServicesCardDashboard'
 import FaqDashboard from './pages/Dashboard/FaqDashboard'
 import PropertyDashboardDetails from './pages/Dashboard/PropertyDashboardDetails'
+import AddProperty from './pages/Dashboard/AddProperty'
  
  
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route element={<DashboardLayout />} >
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/dashboard/properties' element={<PropertiesDashboard />} />
+      <Route path='/dashboard/properties/add' element={<AddProperty />} />
       <Route path='/dashboard/properties/:id' element={<PropertyDashboardDetails />} />
       <Route path='/dashboard/services' element={<ServicesCardDashboard />} />
       <Route path='/dashboard/faqs' element={<FaqDashboard />} />
