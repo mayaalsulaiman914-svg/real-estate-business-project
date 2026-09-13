@@ -19,7 +19,7 @@ const contactData = [
     },
     {
         id: 4,
-        title: ["Facebook", "Instagram", "Facebook"],
+        title: ["Facebook", "Instagram", "linkedln;"],
         icon: "/assets/img/insta facbook linkedin.png",
         link: "#",
     },

@@ -440,7 +440,7 @@ const properties = [
     bedrooms: "4",
     bathrooms: "3",
     area: "2600",
-    image: "/assets/img/photo-slider-12.png.crdownload",
+    image: "/assets/img/photo-slider-12.jpg",
     description:
       "Experience the beauty of the Elegant Sunset Villa. This sophisticated home combines spacious living areas, stylish interiors, private outdoor spaces, and beautiful surroundings to create a peaceful and luxurious lifestyle perfect for families and entertaining.",
 
@@ -583,6 +583,7 @@ const properties = [
       Propertyinsurance: "90",
     },
   },
+ 
   
 ];
 
