@@ -71,10 +71,13 @@
         border: 1px solid var(--primary-border);
         border-radius: 12px;
         background-color: var(--primary-background);
-        img {
-                max-width: 492px;
-                height: 27px;
-                object-fit: contain;
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: Medium;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: var(--text-secondary-color);
         }
         p {
             color: var(--text-primary-color);
@@ -134,12 +137,8 @@
         .client-company-quote {
             padding: 20px;
             gap: 8px;
-            img {
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    max-height: 27px;
-                    object-position: left;
+            h3 {
+                font-size: var(--font-size-sm)            
             }
             p {
                 font-size: var(--font-size-sm);
