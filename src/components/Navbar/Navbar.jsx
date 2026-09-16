@@ -45,15 +45,15 @@ useEffect(() => {
               <NavLink to="/about">About Us</NavLink>
             </li>
             <li className="properties-link">
-              <NavLink to="/propertyDetails/1">Properties</NavLink>
+              <NavLink to="/properties">Properties</NavLink>
             </li>
             <li className="services-link">
               <NavLink to="/services">Services</NavLink>
             </li>
           </ul>
-          <a className="btn" href="/contact">
+          <Link  className="btn" to="/contact">
             Contact Us
-          </a>
+          </Link>
           <div>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
                 <img src="/assets/img/Select Icon.png" alt="Menu" />

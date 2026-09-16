@@ -5,7 +5,12 @@
     position: relative;
     gap: 40px;
     width: 100%;
-
+    span {
+        width: 25px;
+        height: 25px;
+        background-color: red;
+    }
+    
     .desktop-slider , .mobile-slider {
         .slider-window {
         width: 100%;
@@ -23,7 +28,8 @@
           grid-template-columns: repeat(var(--items-per-slide),minmax(0, 1fr));
           gap: var(--slide-gap);
           box-sizing: border-box; 
-         padding: 8px;
+          padding: 8px;
+          align-items: start;
          .container-card {
             display: flex;
             justify-content: center;
@@ -38,6 +44,7 @@
     .desktop-slider {
          .slide {
           grid-template-columns: repeat(var(--items-per-slide), minmax(0,1fr));
+          align-items: start;
         }
     }
  

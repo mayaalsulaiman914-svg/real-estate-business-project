@@ -14,6 +14,8 @@ import FaqDashboard from './pages/Dashboard/FaqDashboard'
 import PropertyDashboardDetails from './pages/Dashboard/PropertyDashboardDetails'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import AddProperty from './pages/Dashboard/AddProperty'
+import Properties from './pages/Properties'
 
 function ScrollToHash() {
   const { hash } = useLocation();
@@ -41,6 +43,7 @@ function App() {
       <Route element={<WebsiteLayout/>} >
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
+      <Route path='/properties' element={<Properties/>} />
       <Route path='/propertydetails/:id' element={<PropertyDetails />} />
       <Route path='/services' element={<Services/>} />
       <Route path='/contact' element={<Contact/>} />
