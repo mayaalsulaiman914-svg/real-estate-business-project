@@ -364,7 +364,6 @@
   .filter-cards {
     margin-top: 40px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 20px;
   }
@@ -454,6 +453,67 @@
     margin-top: 20px;
   }
 }
+
+.hero.properties {
+  height: 600px;
+  background-image: url('/assets/img/photo-slider-12.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary-color);
+    gap: 1rem;
+       .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primary-background);
+        border-radius: 8px;
+        input {
+          background: transparent;
+          padding: 0.5rem;
+          color: var(--text-primary-color);
+          border: none;
+          outline: none;
+        }
+        img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+   
+  }
+
+}
+.container-properties {
+  .container{
+    flex-direction: column;
+      .filter-box {
+      margin-top: 1rem;
+      padding:0.5rem 1rem;
+      width: 60vw;
+      height: 64px;
+      background-color: #1A1A1A;
+      border-radius: 1rem;
+      border: 1px solid var(--primary-border);
+      display: flex;
+    }
+    .properties-list {
+     display: grid;
+     grid-template-columns: repeat(4 , 1fr);
+     gap: 20px;
+    }
+  }
+}
+ 
 
  @media screen And (max-width : 992px) {
    section {
@@ -672,7 +732,7 @@
       }
       .filter-cards {
         flex-direction: column;
-         align-items: flex-start;
+         align-items: center;
       }
     }
   } 

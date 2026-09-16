@@ -1,6 +1,10 @@
-         .property-card {
+            .container-card {
+                align-items: flex-start;
+            }             
+             .property-card {
               max-height: 660px;
               padding: 30px;
+              cursor: pointer;
               .image {
                     width: 100%;
                     height: 255px;
@@ -35,14 +39,20 @@
            .desc {   
                 color: var(--text-secondary-color);
                 margin-bottom: 24px;
+               p {
+                  display: inline-block;
+                  margin: 0;
+               }
 
-                a {
-                    color: var(--text-primary-color); 
-                    text-transform: capitalize;
+                button {
+                    font-size: var(--font-size-originl);
+                    display: inline-block;
+                    background:none;
+                    cursor: pointer;
+                    border: none;
+                    color: var(--text-primary-color);
                     text-decoration: underline;
-                    text-decoration-style: solid;
-                    text-decoration-thickness: 0%;
-
+                    text-transform: capitalize;
                 }
 
            }
@@ -105,6 +115,7 @@
             }
            }
            }
+   
          
         
 @media screen And (max-width : 992px) {

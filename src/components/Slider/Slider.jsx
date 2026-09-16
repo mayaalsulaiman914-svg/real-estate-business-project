@@ -7,11 +7,12 @@ const Slider = ({items , renderItem, desktopItemsPerSlide = 3, gap=20}) => {
  
 const [currentSlide , setCurrentSlide] = useState(0)
 const cards = items.length;
- 
+
 const desktopSlides = [];
 for (let i=0 ; i < items.length ; i +=desktopItemsPerSlide) {desktopSlides.push(items.slice(i , i + desktopItemsPerSlide))}
 
 const mobileSlides = items;
+
  
 const nextSlide = () => {
     setCurrentSlide((prev) => {
