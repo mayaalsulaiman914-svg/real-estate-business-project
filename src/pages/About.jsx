@@ -6,7 +6,6 @@ import Section from '../components/Section/Section'
 import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
-import "./About.css";
 import Meet from "../components/Meet/Meet.jsx";
 
 import NavigatingSection from '../components/NavigatingSection/NavigatingSection'
@@ -39,8 +38,8 @@ const About = () => {
       </div>
       </Container>
       </Section>
-      <Meet/>
       <NavigatingSection/>
+       <Meet/>
       <Section className="our-value-clients">
         <Container>
           <SectionHeading

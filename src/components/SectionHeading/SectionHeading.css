@@ -13,7 +13,7 @@
     }
     p {
         margin: 0;
-        font-size: var(--font-size-original);
+        font-size: var(--font-size-md);
         line-height: 150%;
         font-weight: 500;
         letter-spacing: 0%;
