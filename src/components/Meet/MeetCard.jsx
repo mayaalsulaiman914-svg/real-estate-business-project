@@ -11,7 +11,7 @@ const MeetCard = ({ name, jobTitle, image }) => {
       <h2 className="meet-name">{name}</h2>
       <p className="meet-job">{jobTitle}</p>
       <div className="meet-contact">
-        <img src="/assets/img/Say Hello.png" alt="Welcome" className="meet-welcome"/>
+        <p className="meet-welcome">Say Hello 👋</p>
         <img src="/assets/img/BlueTelegram.png" alt="Telegram" className="meet-telegram"/>
       </div>
     </div>

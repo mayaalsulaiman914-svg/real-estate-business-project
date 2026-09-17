@@ -32,8 +32,6 @@
 .top-nav-content p {
   font-size: var(--font-size-sm);
   color: var(--text-primary-color);
-font-weight: 500;
-line-height: 150%;
 }
 .top-nav-content a {
   font-size: var(--font-size-sm);
@@ -110,7 +108,7 @@ line-height: 150%;
 .main-nav a.btn {
   width: 109px;
   height: 49px;
-  background-color:var(--background-btn); 
+  background-color:var(--primary-background); 
   margin-left: auto;
   text-decoration: none;
   color: var(--text-primary-color);
@@ -131,15 +129,13 @@ line-height: 150%;
   cursor: pointer;
 }
 .menu-button img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
+  width:28px;
+  height:28px;
+
 }
 .exit-button {
   width: 26px;
   height: 26px;
-  object-fit: contain;
-  flex-shrink: 0;
 }
 /* Mobile */
 @media screen and (max-width: 992px) {
@@ -150,14 +146,32 @@ line-height: 150%;
     min-height: 78px;
     display: flex;
     align-items: center;
+    position: relative;
+   
+    
+  }
+  .exit-button{
+    position: absolute;
+    right: 9px;
+   max-width: 26px;
+    height: 26px;
   }
   .top-nav-content p {
     font-size: var(--font-size-xs);
-    margin: 0; 
+   
+   
+    
     
   }
   .top-nav-content a {
     font-size: var(--font-size-xs);
+    padding-right: 16px;
+   
+  }
+  .top-nav-content{
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    
   }
   .main-nav{
     height: 68px;
@@ -168,8 +182,6 @@ line-height: 150%;
   }
   .main-nav .container {
     min-height: 68px;
-    
-    
 }
  .mobile-nav-links {
   position: absolute;
@@ -191,12 +203,16 @@ line-height: 150%;
   }
 .mobile-nav-links a {
   display: block;
-  width: 100%;
   color: var(--text-primary-color);
   text-decoration: none;
   font-size: var(--font-size-sm);
   font-weight: 500;
  
+}
+.mobile-contact{
+  width: 109px;
+  height: 49px;
+  background-color: var(--primary-background);
 }
   .nav-links {
     display: none;
@@ -212,4 +228,6 @@ line-height: 150%;
     width: 113.33px;
     height: 34px;
   }
+  
+
 }
