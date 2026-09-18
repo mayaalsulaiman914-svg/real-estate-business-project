@@ -62,7 +62,8 @@
     box-sizing: border-box;
 }
 .meet-welcome {
-    object-fit: contain;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary-color);
 }
 .meet-telegram {
     width: 20px;
@@ -78,6 +79,11 @@
 }
 @media screen and (max-width: 992px) {
     .meet-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: 1fr;
         gap: 20px;
         margin-top: 40px;
@@ -126,12 +132,20 @@
 
     .meet-welcome {
         width: 218px;
-        height: 28px;
-        padding-right: 76px;
     }
 
     .meet-telegram {
         width: 20px;
         height: 20px;
     }
+     .mobile-contact {
+  height: 49px;
+  background-color: var(--background-btn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--text-primary-color);
+  text-decoration: none;
+}
 }

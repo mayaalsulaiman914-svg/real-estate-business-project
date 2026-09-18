@@ -7,6 +7,7 @@ import Button from "../Button/Button";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [topNavOpen, setTopNavOpen] = useState(true);
 useEffect(() => {
   const handleResize = () => {
     if (window.innerWidth > 992) {
@@ -20,16 +21,18 @@ useEffect(() => {
 }, []);
   return (
     <header className="navbar">
-      {/* Top Navigation */}
+     {/* Top Navigation */}
+   {topNavOpen &&(
       <div className="top-nav">
         <Container>
           <div className="top-nav-content">
             <p>✨Discover Your Dream Property with Estatein</p>
             <a href="#"> Learn More</a>
           </div>
-           <img className="exit-button"src="/assets/img/Exite Button.png" alt="Close"/>
+           <img className="exit-button"src="/assets/img/Exite Button.png" alt="Close" onClick={() => setTopNavOpen(false)}/>
         </Container>
       </div>
+   )}
       {/* Main Navigation */}
       <nav className="main-nav">
         <Container>
@@ -56,7 +59,7 @@ useEffect(() => {
           </Link>
           <div>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
-                <img src="/assets/img/Select Icon.png" alt="Menu" />
+                <img src="/assets/img/SelectNew.png" alt="Menu" />
           </button>
 
           
@@ -85,6 +88,13 @@ useEffect(() => {
             <li>
               <Link to="/services" onClick={() => setMenuOpen(false)}>
                 Services
+              </Link>
+            </li>
+
+            
+            <li className="mobile-contact">
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                Contact Us
               </Link>
             </li>
 
