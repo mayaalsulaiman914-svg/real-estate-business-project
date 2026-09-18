@@ -90,6 +90,7 @@
 
 @media screen and (max-width : 992px) {
     .client-company-card {
+        max-width: 620px;
         padding: 24px;
         border-radius: 10px;
         .client-company-header {

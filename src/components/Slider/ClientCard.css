@@ -1,16 +1,18 @@
-.client-card {
+  .container-card {
+    align-self: normal;
+  }
+
+    .client-card {
     padding: 40px;
-    max-height: 415px;
     display: flex;
     box-sizing: border-box;
-   
-
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
     .container-stars {
         display: flex;
         align-items: center;
         gap: 2px;
-        margin-bottom: 30px;
-
         .star {
             width: 38px;
             height: 36px;
@@ -32,9 +34,7 @@
     h2 {
         margin-bottom: 10px;
        }
-    p.desc {
-    margin-bottom: 30px;
-    }
+  
     .container-person {
         display: flex;
         align-items: center;
@@ -68,6 +68,8 @@
            }
     
     }
+ 
+ 
  @keyframes pulse {
                 0%, 100% {
                     transform :scale(1);
@@ -78,21 +80,16 @@
                 }
                 
 }
+ 
 
 @media screen And (max-width : 992px) {
     .client-card {
           padding: 30px;
+          gap: 24px;
 
-        .container-stars {
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            margin-bottom: 6px;
-        }
-        p.desc {
-            margin-bottom: 24px;
-        }
+            h2 {
+                margin-bottom: 6px;
+            }
        .container-person {
          .info-person {
             h3 {

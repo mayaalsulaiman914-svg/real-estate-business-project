@@ -24,13 +24,13 @@ const Contact = () => {
         <ContactQuick/>
         
       </Hero>
-       <Section className="connect" >
+       <Section className="connect" id="connect-form">
         <Container >
           <SectionHeading title="Let's Connect" description="We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need." showDecoration ={true} mobileEnd="Estatein" />
          <ContactForm />
         </Container>
       </Section>
-      <Section className="office-location">
+      <Section className="office-location" id="office">
         <Container>
           <SectionHeading title="Discover Our Office Locations" description="Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs. Explore the categories below to find the Estatein office nearest to you" showDecoration ={true} mobileEnd="team" />
             <div className="filter-btns">
