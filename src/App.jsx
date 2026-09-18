@@ -13,26 +13,30 @@ import AddProperty from './pages/Dashboard/AddProperty'
 import ServicesCardDashboard from './pages/Dashboard/ServicesCardDashboard'
 import FaqDashboard from './pages/Dashboard/FaqDashboard'
 import PropertyDashboardDetails from './pages/Dashboard/PropertyDashboardDetails'
+import Properties from './pages/Properties'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function ScrollToHash() {
-  const { hash } = useLocation();
-  useEffect(() => {
-    if (!hash) return;
-    const id = hash.substring(1);
-    const scrollToElement = () => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-        });
-      }
-    };
-    setTimeout(scrollToElement, 100);
-  }, [hash]);
-  return null;
+    const { pathname, hash } = useLocation();
+    useEffect(() => {
+        if (!hash) return;
+        const id = hash.substring(1);
+        const timer = setTimeout(() => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }, 100);
+        return () => clearTimeout(timer);
+    }, [pathname, hash]);
+    return null;
 }
+
+
  
 function App() {
   return (
@@ -42,6 +46,7 @@ function App() {
       <Route element={<WebsiteLayout/>} >
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
+      <Route path='/properties' element={<Properties/>} />
       <Route path='/propertydetails/:id' element={<PropertyDetails />} />
       <Route path='/services' element={<Services/>} />
       <Route path='/contact' element={<Contact/>} />

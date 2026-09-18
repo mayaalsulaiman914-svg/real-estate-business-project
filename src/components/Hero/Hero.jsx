@@ -4,6 +4,7 @@ import Stats from "../Stats/Stats"
 import "./Hero.css"
 
 function Hero({ title,
+                id,
                 description,
                 secondaryButtonText,
                 primaryButtonText,
@@ -13,7 +14,7 @@ function Hero({ title,
                 showStats = true,
                 children}) {
     return (
-        <section className={`hero ${!image ? "hero-simple" : ""}`} id="hero">
+        <section className={`hero ${!image ? "hero-simple" : ""}`} id={id} >
             <div className="hero-main">
                 <div className="hero-content">
                     <SectionHeading

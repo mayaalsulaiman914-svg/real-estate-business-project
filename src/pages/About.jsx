@@ -13,6 +13,7 @@ const About = () => {
   return (
     <div>
       <Hero 
+        id="story"
         showDecoration= {true}
         title="Our Journey"
         description="Our story is one of continuous growth and evolution.
@@ -21,7 +22,7 @@ const About = () => {
         image = "/assets/img/hero2 page2.png"
         imageVariant= "content">
       </Hero>
-      <Section className="about-section">
+      <Section className="about-section" id="works">
        <Container>
         <div className="content-text">
           <SectionHeading showDecoration={true}
@@ -40,7 +41,7 @@ const About = () => {
       </Section>
       <NavigatingSection/>
        <Meet/>
-      <Section className="our-value-clients">
+      <Section className="our-value-clients" id="clients">
         <Container>
           <SectionHeading
             showDecoration={true}
