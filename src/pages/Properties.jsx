@@ -50,8 +50,8 @@ const totalPages = Math.ceil(filteredProperties.length / propertiesPerPage)
 const startIndex = (currentPage - 1) * propertiesPerPage
 const currentProperties = filteredProperties.slice(startIndex , startIndex + propertiesPerPage)
   return (
-    <div>
-      <Section className="properties-page">
+    <div className="properties-page">
+      <Section  className="properties-hero">
         <div className='hero'>
              <Container>
             <h1>Explore Our Properties</h1>

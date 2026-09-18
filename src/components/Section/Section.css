@@ -108,7 +108,7 @@
 }
 .property-page {
   color: var(--text-primary-color);
-  section.hero-property {
+  .hero-property {
   padding-top: 167px;
   margin-top: 0;
   width: 100%;
@@ -455,7 +455,8 @@
 }
 
 .properties-page {
-      .hero {
+  .properties-hero {
+     .hero {
         margin-top: 130px;
         padding: 60px 40px 20px;                 
         background: linear-gradient(224deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 20%) ,
@@ -497,12 +498,8 @@
             }
           }
           }
-        
-
-   
   }
- 
-.container-properties {
+  .container-properties {
   margin-top: 0;
   .container{
     flex-direction: column;
@@ -553,6 +550,11 @@
     }
   }
 }
+ 
+   
+  }
+ 
+ 
 
 @keyframes cardDrop {
   from {
@@ -855,6 +857,36 @@
         background-position: center;
       }
     }
+  .properties-page {
+      .properties-hero{
+      .hero {
+        padding: 60px 0 20px ;
+      .container {
+      padding-bottom: 30px;
+      align-items: flex-start;
+       h1 {
+        font-size: var(--font-size-2xl);
+       }
+      }
+      }
+     
+     }
+      .container-properties {
+       .container {
+      .filter-box {
+        flex-wrap: wrap;
+        width: 100%;
+        height: max-content;
+        justify-content: space-between;
+        row-gap: 6px;
+      }
+      .properties-list {
+        grid-template-columns: repeat(1 , 1fr);
+      }
+    }
+  }
+  }
+ 
   }
   
 
