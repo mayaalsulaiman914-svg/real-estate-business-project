@@ -6,7 +6,7 @@ const properties = [
         city : "Malibu, California" ,
         price : "1,250,000" ,
         bedrooms : "4" ,
-        bathrooms : "3" ,
+        bathrooms : "4" ,
         area : "2500" ,
         image : "/assets/img/home page1.png",
         description : "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living." ,
@@ -169,8 +169,8 @@ const properties = [
     title: "Modern City Residence",
     city: "New York, New York",
     price: "$875,000",
-    bedrooms: "2",
-    bathrooms: "2",
+    bedrooms: "1",
+    bathrooms: "1",
     area: "1450",
     image: " /assets/img/photo-slider-5.avif",
     description:
@@ -583,6 +583,44 @@ const properties = [
       Propertyinsurance: "90",
     },
   },
+ 
+  {
+    id: 16,
+    type: "Villa",
+    title: "Azure Bay Luxury Villa",
+    city: "Miami, Florida",
+    price: "$1,850,000",
+    bedrooms: "5",
+    bathrooms: "4",
+    area: "3200",
+    image: "/assets/img/photo-slider-16.png",
+    description: "Experience modern coastal luxury at the Azure Bay Luxury Villa. This stunning residence features spacious interiors, elegant finishes, large glass windows, a private swimming pool, and beautiful outdoor spaces designed for relaxing and entertaining.",
+
+    additionalFees: {
+        Propertytransfertax: "37,000",
+        Legalfees: "4,000",
+        Homeinspection: "600",
+        Propertyinsurance: "1,500",
+    },
+
+    MonthlyCosts: {
+        Propertytaxes: "1,850",
+        Homeownersassociationfee: "350",
+    },
+
+    Totalinitialcosts: {
+        Listingprice: "1,850,000",
+        Additionalfees: "43,100",
+        Downpayment: "370,000",
+        Mortgageamount: "1,480,000",
+    },
+  Monthlyexpenses: {
+        Propertytaxes: "1,850",
+        HomeownersAssociationFee: "350",
+        Propertyinsurance: "125",
+    }
+},
+
  
   
 ];

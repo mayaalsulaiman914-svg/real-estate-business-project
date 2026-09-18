@@ -5,11 +5,6 @@
     position: relative;
     gap: 40px;
     width: 100%;
-    span {
-        width: 25px;
-        height: 25px;
-        background-color: red;
-    }
     
     .desktop-slider , .mobile-slider {
         .slider-window {
