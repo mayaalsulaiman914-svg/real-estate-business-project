@@ -8,7 +8,7 @@ import "./Smart.css";
 
 const Smart = () => {
   return (
-    <Section className="smart">
+    <Section className="smart" id="smart">
       <Container>
         <div className="smart-content">
           <div className="smart-left">

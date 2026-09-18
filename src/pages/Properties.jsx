@@ -36,7 +36,7 @@ const currentProperties = filteredProperties.slice(startIndex , startIndex + pro
  
   return (
     <div>
-      <Section className="hero properties">
+      <Section className="hero properties" id="hero-properties">
         <div className="overlay">
           <h1>Search for your perfect property here!</h1>
           <p>find the best properties easily</p>
@@ -46,7 +46,7 @@ const currentProperties = filteredProperties.slice(startIndex , startIndex + pro
            </div>
         </div>
       </Section>
-           <Section className="container-properties">
+           <Section className="container-properties" id="properties">
           <Container>
               <div className="filter-box">
             <select value={filters.type} onChange={(e) => setFilters({...filters, type : e.target.value})} >

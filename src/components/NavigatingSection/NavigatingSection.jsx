@@ -42,7 +42,7 @@ const steps = [
 ];
 const NavigatingSection = () => {
   return (
-    <Section className="estatein-process-section">
+    <Section className="estatein-process-section" id="it-works">
       <Container>
         <div className="estatein-process">
           <header className="estatein-process__heading">

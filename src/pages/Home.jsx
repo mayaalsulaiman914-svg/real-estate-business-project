@@ -30,6 +30,7 @@ const Home = () => {
   return (
     <div>
         <Hero 
+        id="hero"
         title="Discover Your Dream Property with Estatein"
         description="Your journey to finding the perfect property 
         begins here. Explore our listings to find the home that matches your dreams."
@@ -40,7 +41,7 @@ const Home = () => {
       >
         <QuickServices/>
       </Hero>
-      <Section className="properties-section" id="properties">
+      <Section className="properties-section" id="property">
         <Container>
             <div className="content-text">
                 <SectionHeading showDecoration= {true}
@@ -62,9 +63,6 @@ const Home = () => {
             <Slider items={clients} renderItem ={(client) => (<ClientCard client={client} />)}>
               
             </Slider>
-            
-
- 
         </Container>
       </Section>
       <Section className="faq-section" id="faq">
