@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import AddFaq from './pages/Dashboard/AddFaq'
 import EditFaq from './pages/Dashboard/EditFaq'
+import Properties from './pages/Properties'
 
 function ScrollToHash() {
     const { pathname, hash } = useLocation();
