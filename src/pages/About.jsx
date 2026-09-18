@@ -6,7 +6,6 @@ import Section from '../components/Section/Section'
 import Clients from '../components/Slider/Clients'
 import achievements from "../data/Achievement.js";
 import Achievement from "../components/Achievement/Achievement.jsx";
-import "./About.css";
 import Meet from "../components/Meet/Meet.jsx";
 
 import NavigatingSection from '../components/NavigatingSection/NavigatingSection'
@@ -14,6 +13,7 @@ const About = () => {
   return (
     <div>
       <Hero 
+        id="story"
         showDecoration= {true}
         title="Our Journey"
         description="Our story is one of continuous growth and evolution.
@@ -22,7 +22,7 @@ const About = () => {
         image = "/assets/img/hero2 page2.png"
         imageVariant= "content">
       </Hero>
-      <Section className="about-section">
+      <Section className="about-section" id="works">
        <Container>
         <div className="content-text">
           <SectionHeading showDecoration={true}
@@ -39,9 +39,9 @@ const About = () => {
       </div>
       </Container>
       </Section>
-      <Meet/>
       <NavigatingSection/>
-      <Section className="our-value-clients">
+       <Meet/>
+      <Section className="our-value-clients" id="clients">
         <Container>
           <SectionHeading
             showDecoration={true}

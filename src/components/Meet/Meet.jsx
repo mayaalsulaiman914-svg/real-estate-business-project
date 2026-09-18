@@ -8,7 +8,7 @@ import MeetCard from "./MeetCard.jsx";
 
 const Meet = () => {
   return (
-    <Section className="meet-section">
+    <Section className="meet-section" id="meet">
       <Container>
         <div className="meet-content">
           <SectionHeading showDecoration={true}

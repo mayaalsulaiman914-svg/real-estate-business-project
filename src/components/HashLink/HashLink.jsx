@@ -1,19 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function HashLink({ to, children, ...props }) {
+    const location = useLocation();
+
     const handleClick = (e) => {
-    const [path, hash] = to.split("#");
-    if (window.location.pathname === path && hash) {
-        e.preventDefault();
-        document.getElementById(hash)?.scrollIntoView({
-        behavior: "smooth",
-            });
+        const [path, hash] = to.split("#");
+        if (location.pathname === path && hash) {
+            e.preventDefault();
+            const element = document.getElementById(hash);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                });
+            }
         }
     };
     return (
-    <Link to={to} onClick={handleClick} {...props}>
-        {children}
-    </Link>
+        <Link to={to} onClick={handleClick} {...props}>
+            {children}
+        </Link>
     );
 }
 

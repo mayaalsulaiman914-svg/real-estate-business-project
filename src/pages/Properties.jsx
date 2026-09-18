@@ -64,7 +64,7 @@ const currentProperties = filteredProperties.slice(startIndex , startIndex + pro
          </Container>  
         </div> 
       </Section>
-           <Section className="container-properties">
+           <Section className="container-properties" id="properties">
           <Container>
               <div className="filter-box">
             <button onClick={() => {setFilters ({search :"" ,type: "all" , bedrooms : "all" , bathrooms : "all" ,sort:"default"})}}>All properties</button>

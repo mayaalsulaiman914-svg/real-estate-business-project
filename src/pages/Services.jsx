@@ -13,13 +13,14 @@ const Services = () => {
   return (
     <div>
         <Hero
+        id="mastary"
         title="Elevate Your Real Estate Experience"
         description="Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."
         showStats = {false}
         >
           <QuickServices/>
       </Hero>
-      <Section className="Unlock-Property-Value">
+      <Section className="Unlock-Property-Value" id="value">
         <Container>
           <SectionHeading
           showDecoration={true}
@@ -41,7 +42,7 @@ const Services = () => {
           </div>
         </Container>
       </Section>
-      <Section className="Effortless-Property">
+      <Section className="Effortless-Property" id="effortless">
         <Container>
           <SectionHeading
           showDecoration={true}

@@ -39,36 +39,36 @@ function Footer() {
                 <div className="footer-column">
                 <h3>Home</h3>
                 <HashLink to="/#hero">Hero Section</HashLink>
-                <HashLink to="/#properties">Features</HashLink>
-                <HashLink to="/">Properties</HashLink>
+                <HashLink to="/#property">Features</HashLink>
+                <HashLink to="/properties#properties">Properties</HashLink>
                 <HashLink to="/#Testimonials">Testimonials</HashLink>
                 <HashLink to="/#faq">FAQ's</HashLink>
                 </div>
                 <div className="footer-column">
                 <h3>About Us</h3>
-                <Link to="/about">Our Story</Link>
-                <Link to="/about">Our Works</Link>
-                <Link to="/about">How It Works</Link>
-                <Link to="/about">Our Team</Link>
-                <Link to="/about">Our Clients</Link>
+                <HashLink to="/about#story">Our Story</HashLink>
+                <HashLink to="/about#works">Our Works</HashLink>
+                <HashLink to="/about#it-works">How It Works</HashLink>
+                <HashLink to="/about#meet">Our Team</HashLink>
+                <HashLink to="/about#clients">Our Clients</HashLink>
                 </div>
                 <div className="footer-column">
                 <h3>Properties</h3>
-                <Link to="/propertydetails">Portfolio</Link>
-                <Link to="/propertydetails">Categories</Link>
+                <Link to="/properties#hero-properties">Portfolio</Link>
+                <Link to="/properties#properties">Categories</Link>
                 </div>
                 <div className="footer-column">
                 <h3>Services</h3>
-                <Link to="/services">Valuation Mastery</Link>
-                <Link to="/services">Strategic Marketing</Link>
-                <Link to="/services">Negotiation Wizardry</Link>
-                <Link to="/services">Closing Success</Link>
-                <Link to="/services">Property Management</Link>
+                <HashLink to="/services#mastary">Valuation Mastery</HashLink>
+                <HashLink to="/services#value">Strategic Marketing</HashLink>
+                <HashLink to="/services#effortless">Negotiation Wizardry</HashLink>
+                <HashLink to="/services#smart">Closing Success</HashLink>
+                <HashLink to="/services#hero-properties">Property Management</HashLink>
                 </div>
                 <div className="footer-column">
                 <h3>Contact Us</h3>
-                <Link to="/contact">Contact Form</Link>
-                <Link to="/contact">Our Offices</Link>
+                <HashLink to="/contact#connect-form">Contact Form</HashLink>
+                <HashLink to="/contact#office">Our Offices</HashLink>
                 </div>
             </div>
             </Container>
