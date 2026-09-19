@@ -5,7 +5,6 @@ import About from './pages/About'
 import PropertyDetails from './pages/PropertyDetails'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
-import Dashboard from './pages/Dashboard/Dashboard'
 import WebsiteLayout from './components/Layouts/WebsiteLayout'
 import DashboardLayout from './pages/Dashboard/DashboardLayout'
 import PropertiesDashboard from './pages/Dashboard/PropertiesDashboard'
@@ -54,7 +53,6 @@ function App() {
       <Route path='/contact' element={<Contact/>} />
       </Route>
       <Route element={<DashboardLayout />} >
-      <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/dashboard/properties' element={<PropertiesDashboard />} />
       <Route path='/dashboard/properties/add' element={<AddProperty />} />
       <Route path='/dashboard/properties/:id' element={<PropertyDashboardDetails />} />

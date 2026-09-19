@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import Button from "../Button/Button"
 import SectionHeading from "../SectionHeading/SectionHeading"
 import Stats from "../Stats/Stats"
@@ -12,7 +13,9 @@ function Hero({ title,
                 image,
                 imageVariant,
                 showStats = true,
-                children}) {
+                children})
+{
+ const navigate = useNavigate()   
     return (
         <section className={`hero ${!image ? "hero-simple" : ""}`} id={id} >
             <div className="hero-main">
@@ -30,7 +33,7 @@ function Hero({ title,
                             </Button>
                         )}
                         {primaryButtonText && (
-                            <Button variant="primary">
+                            <Button variant="primary" onClick={()=> navigate("/properties")}>
                                 {primaryButtonText}
                             </Button>
                         )}
