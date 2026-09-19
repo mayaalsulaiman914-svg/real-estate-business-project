@@ -134,7 +134,7 @@ const properties = [
     bedrooms: "4",
     bathrooms: "4",
     area: "3200",
-    image: "/assets/img/home10.png",
+    image: "/assets/img/photo-slider-5.avif",
     description:
       "Discover your own piece of paradise with the Oceanview Paradise Villa. With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
 

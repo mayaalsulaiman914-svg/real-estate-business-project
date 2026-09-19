@@ -27,7 +27,7 @@ useEffect(() => {
         <Container>
           <div className="top-nav-content">
             <p>✨Discover Your Dream Property with Estatein</p>
-            <a href="#"> Learn More</a>
+            <Link to="/properties"> Learn More</Link>
           </div>
            <img className="exit-button"src="/assets/img/Exite Button.png" alt="Close" onClick={() => setTopNavOpen(false)}/>
         </Container>
@@ -48,7 +48,7 @@ useEffect(() => {
               <NavLink to="/about">About Us</NavLink>
             </li>
             <li className="properties-link">
-              <NavLink to="/propertydetails/1">Properties</NavLink>
+              <NavLink to="/properties">Properties</NavLink>
             </li>
             <li className="services-link">
               <NavLink to="/services">Services</NavLink>

@@ -218,7 +218,7 @@
 }
 .mobile-contact{
   max-width: 130px;
- 
+  margin-left: -5px;
   height: 49px;
   background-color: var(--primary-background);
 }
