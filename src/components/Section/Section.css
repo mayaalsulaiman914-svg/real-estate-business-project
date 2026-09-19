@@ -474,8 +474,8 @@ gap: 30px;
      .hero {
         margin-top: 130px;
         padding: 60px 40px 20px;                 
-        background: linear-gradient(224deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 20%) ,
-                     linear-gradient(136deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 20%);
+        background: linear-gradient(180deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 13%) ;
+                   
         .container {
           padding-bottom: 60px;
           display: flex;
