@@ -53,6 +53,9 @@ useEffect(() => {
             <li className="services-link">
               <NavLink to="/services">Services</NavLink>
             </li>
+            <li className="dashboard">
+              <NavLink to="/dashboard/properties">Dashboard</NavLink>
+            </li>
           </ul>
           <Link  className="btn" to="/contact">
             Contact Us
@@ -80,7 +83,7 @@ useEffect(() => {
             </li>
 
             <li>
-              <Link to="/propertydetails" onClick={() => setMenuOpen(false)}>
+              <Link to="/properties" onClick={() => setMenuOpen(false)}>
                 Properties
               </Link>
             </li>

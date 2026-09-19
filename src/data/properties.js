@@ -8,7 +8,7 @@ const properties = [
         bedrooms : "4" ,
         bathrooms : "4" ,
         area : "2500" ,
-        image : "/assets/img/home page1.png",
+        image : "/assets/img/home8.png",
         description : "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living." ,
          
         // Additional Fees
@@ -50,7 +50,7 @@ const properties = [
         bedrooms : "2" ,
         bathrooms : "2" ,
         area : "2500" ,
-        image : "/assets/img/home2 page1.png",
+        image : "/assets/img/home9.png",
         description : "Discover an extraordinary lifestyle at the Luxury Hillside Estate. With spacious interiors, breathtaking panoramic views, elegant finishes, and beautifully designed outdoor areas, this exceptional residence offers the perfect combination of privacy, comfort, and timeless California luxury." ,
          
         // Additional Fees
@@ -134,7 +134,7 @@ const properties = [
     bedrooms: "4",
     bathrooms: "4",
     area: "3200",
-    image: "/assets/img/photo-slider-4.avif",
+    image: "/assets/img/home10.png",
     description:
       "Discover your own piece of paradise with the Oceanview Paradise Villa. With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
 

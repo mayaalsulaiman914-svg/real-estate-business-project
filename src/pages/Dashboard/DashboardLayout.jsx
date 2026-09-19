@@ -8,7 +8,6 @@ const DashboardLayout = () => {
      <aside className='dashboard-sidebar'>
         <h1>Estatein</h1>
         <nav>
-            <Link to='/dashboard'> Dashboard</Link>
             <Link to='/dashboard/properties'> Properties</Link>
             <Link to='/dashboard/services'>Services Card</Link>
             <Link to='/dashboard/faqs'> Faq Questions</Link>
