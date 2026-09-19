@@ -92,6 +92,7 @@
     background-color: var(--primary-background);
     border: 1px solid #262626
   }
+  
 }
 .home-link a {
   padding: 12px 20px;
@@ -144,34 +145,18 @@
   }
   .top-nav .container {
     min-height: 78px;
-    display: flex;
-    align-items: center;
-    position: relative;
-   
-    
+    position: relative;    
   }
   .exit-button{
     position: absolute;
     right: 9px;
-   max-width: 26px;
-    height: 26px;
   }
   .top-nav-content p {
     font-size: var(--font-size-xs);
-   
-   
-    
-    
   }
   .top-nav-content a {
     font-size: var(--font-size-xs);
     padding-right: 16px;
-   
-  }
-  .top-nav-content{
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    
   }
   .main-nav{
     height: 68px;
@@ -179,6 +164,7 @@
   }
   .mobile-menu{
     position: relative;
+     transition: all 0.3s ease;
   }
   .main-nav .container {
     min-height: 68px;
@@ -194,8 +180,24 @@
   z-index: 1000;
   background-color: var(--second-background);
   border-top: 1px solid var(--primary-border);
+  
+  animation: dropdown 0.6s ease-out;
+  transform-origin: top;
    
 }
+
+@keyframes dropdown {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
 .mobile-nav-links li {
   width: 100%;
   padding: 14px 0;
