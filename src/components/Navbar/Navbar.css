@@ -92,8 +92,9 @@
   transition: all 0.3s ease;
   &.active {
     background-color: var(--primary-background);
-    border: 1px solid #262626
+ 
   }
+ 
   
 }
 .home-link a {

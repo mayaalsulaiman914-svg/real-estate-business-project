@@ -1,6 +1,7 @@
 .faq-section .container {
   flex-direction: column;
 }
+
 .faq-card {
   padding: 40px;
   box-sizing: border-box;
