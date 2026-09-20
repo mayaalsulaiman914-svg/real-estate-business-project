@@ -1,11 +1,8 @@
  .container-card {
                 align-items: flex-start;
             } 
- .card {
- &.property-card {
-     box-shadow: none;
-  }
-            }            
+ 
+                    
 .property-card {
    max-height: 660px;
    padding: 30px;
