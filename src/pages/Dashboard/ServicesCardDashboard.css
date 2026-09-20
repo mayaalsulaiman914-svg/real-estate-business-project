@@ -8,7 +8,7 @@
         margin-bottom: 30px;
         border: 1px solid var(--primary-border);
         border-radius: 8px;
-        background-color: var(--second-background);
+        background-color: var(--background-btn );
         color: var(--text-primary-color);
         cursor: pointer;
         font-size: 16px;
