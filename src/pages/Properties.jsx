@@ -51,7 +51,7 @@ const startIndex = (currentPage - 1) * propertiesPerPage
 const currentProperties = filteredProperties.slice(startIndex , startIndex + propertiesPerPage)
   return (
     <div className="properties-page">
-      <Section  className="properties-hero">
+      <Section  className="properties-hero" id="properties-hero">
         <div className='hero'>
              <Container>
             <h1>Explore Our Properties</h1>
